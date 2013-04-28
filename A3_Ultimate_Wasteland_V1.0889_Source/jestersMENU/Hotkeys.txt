@@ -1,0 +1,17 @@
+F1 : [Open Menu]
+
+F2 : >God Mode
+
+F3 : >No Recoil
+
+F4 : >Teleport
+
+F5 : >Kill All
+
+F6 : >Teleport All
+
+F7 : >Spawn Vehicles
+
+F8 : >Visual Effects
+
+F11 : [Show Hotkeys]
