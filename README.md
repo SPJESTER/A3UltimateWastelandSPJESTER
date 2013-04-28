@@ -1,6 +1,6 @@
 Ultimate Wasteland by SPJESTER v1.089
-Based off of GoT Wasteland V1.08(D)
 ==================================
+Based off of GoT Wasteland V1.08(D)
 
 All credits for Wasteland go to 404Games and their DEV's
 This is just my alteration.
