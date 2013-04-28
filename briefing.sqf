@@ -235,7 +235,7 @@ player createDiaryRecord["changelog",
 "1.088(SPJESTER)",
 "
 <br/>
-		CHANGES FOR V1.089<br/>
+		CHANGES FOR V1.088<br/>
 		[ADDED] GPS to BluFor and Opfor<br/>
 		[ADDED] TAW VIEW DISTANCE MOD<br/>
 		[FIXED] FOOD LEVELS<br/>		
