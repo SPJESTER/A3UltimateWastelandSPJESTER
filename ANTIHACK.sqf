@@ -11,7 +11,7 @@ AHAH = {
         _contents = format["", loadFile _x];
         if (_contents != "") then {
                 diag_log "ANTI-HACK 0.6.3: hacker?!";
- 
+				player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me.";
                 hackFlag = [player, "hack menu", _x];
                 publicVariableServer "hackFlag";
                 sleep 5;
@@ -26,8 +26,7 @@ AHAH = {
     [] spawn {
         private["_sleepVariableCheck", "_badPublicVariables"];
         _sleepVariableCheck = 30;
-        _badPublicVariables = [
-		"p", "fffffffffff", "markPos", "pos", "marker", "TentS", "VL", "MV",
+        _badPublicVariables = ["p", "fffffffffff", "markPos", "pos", "marker", "TentS", "VL", "MV",
 		"mk2", "i", "j", "fuckmegrandma", "mehatingjews", "scode", "TTT5OptionNR",
 		"igodokxtt", "omgwtfbbq", "namePlayer", "thingtoattachto", "HaxSmokeOn", "v",
 		"antiloop", "ARGT_JUMP", "selecteditem", "moptions", "delaymenu", "gluemenu",
@@ -55,7 +54,7 @@ AHAH = {
             {
                 if !(isNil _x) exitWith {
                     diag_log "ANTI-HACK 0.6.3: Found a Hack Variable!";
- 
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "hacked variable", _x];
                     publicVariableServer "hackFlag";
                     sleep 5;
@@ -82,7 +81,7 @@ AHAH = {
             if (!(isNull findDisplay 3030) || !(isNull findDisplay 155)) then {
  
                     diag_log "ANTI-HACK 0.6.3: Found a Hack Menu!";
- 
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "hack menu", _x];
                     publicVariableServer "hackFlag";
                     sleep 5;
@@ -105,6 +104,7 @@ AHAH = {
         do {
             if (unitRecoilCoefficient player != _recoilSettings) exitWith {
                     diag_log "ANTI-HACK 0.6.3: Detected No-Recoil Hack!";
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "no recoil", "null"];
                     publicVariableServer "hackFlag";
                     sleep 5;
@@ -126,8 +126,9 @@ addPublicVariableEventHandler {
     _hackType = _array select 1;
     _hackValue = format["", _array select 2];
     diag_log format["ANTI-HACK:  () was detected for  with the value ''", name _player, getPlayerUID _player, _hackType, _hackValue];
-    serverCommand format["#kick ", name _player];
-    serverCommand format["#exec ban ", name _player];
+	player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
+	serverCommand format["#kick ", name _player];
+    serverCommand format["#exec ban ", getPlayerUID _player];
 };
 "clientStarted"
 addPublicVariableEventHandler {

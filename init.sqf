@@ -108,13 +108,11 @@ if (!isDedicated) then {
 	} foreach (nearestObjects[[0,0], R3F_LOG_CFG_objets_deplacables, 20000]); 
 };
 
-//Proving Grounds
-[] execVM "addons\proving_Ground\init.sqf";
-
 //TWEAKS
 if (viewdistance < 1700) then { setviewdistance 2000 };
 setTerrainGrid 25;
 waituntil {!isnil "bis_fnc_init"};
+
 
 //ANTIHACK 0.6.3
 if (isServer) then {
@@ -126,3 +124,8 @@ if (isServer) then {
     clientStarted = player;
     publicVariableServer "clientStarted";
 };
+
+//Proving Grounds
+[] execVM "addons\proving_Ground\init.sqf";
+
+
