@@ -1,11 +1,11 @@
-Ultimate Wasteland by SPJESTER v1.089
+Ultimate Wasteland by SPJESTER V1.0895
 ==================================
 Based off of GoT Wasteland V1.08(D)
 
 All credits for Wasteland go to 404Games and their DEV's
 This is just my alteration.
 
-current status: v1.089 (Complete Edition)
+current status: V1.0895 (Complete Edition)
 
 If you are not famillair with creating PBO files, grab the ready-to-go-PBO here: 
 https://github.com/JoSchaap/Arma3_Binary_PBO
@@ -153,21 +153,21 @@ CHANGES FOR V1.088<br/>
 [CHANGED] WEAPON LAYOUTS<br/>
 [CHANGED] RESPAWN TIMER TO 10SEC<br/>
 
-"1.089(SPJESTER)",
-CHANGES FOR V1.089<br/>
-[ADDED] BIS CLEAR/RECOMPILE FUNCTION<br/>
-[ADDED] IMPROVED ANTI-HACK SYSTEM<br/>
-[MOVED] MOST SCRIPTS TO BEGINNING TO LOAD FASTER<br/>
-[FIXED] WEATHER/FOG TAKING A FEW TO START<br/>
-[TWEAKED] THE FOG TO BE A LITTLE LESS AGRESSIVE<br/>
-[TWEAKED] SOME ANTI-HACK SETTINGS<br/>
-[TWEAKED] DEFAULT VIEWDISTANCE<br/>
-[CHANGED] SOME OBSOLETE CODE PREPING FOR UPDATE<br/>
-[CHANGED] LABELING, THIS IS NOW THE FULL RELEASE<br/>
-[CHANGED] START TIME TO 12AM<br/>
+CHANGES FOR V1.0892<br/>
+[ADDED] WEATHER AND TIME CHANGE TO ADMIN PANEL<br/>
+[FIXED] LOCAL MISSIONS NOT APPEARING<br/>
+[TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
+[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
 
+CHANGES FOR V1.0894<br/>
+[REMOVED] Food and Water System<br/>
+[REMOVED] Food and Water items for FPS<br/>
 
+CHANGES FOR V1.0895<br/>
+[TWEAKED] FEW THINGS IN CODE<br/>
+[FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
 
+		
 Please be reminded that i did NOT create this mission from scratch, most of the work has been done by the awesome DEV-team @ 404Games. Im just the huy that had some spare time to make it work in ArmA3Alpha :)
 
 All credit are still due to them and not me

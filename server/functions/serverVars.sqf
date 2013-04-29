@@ -48,7 +48,7 @@ publicVariable "currentInvites";
 currentStaticHelis = []; // Storage for the heli marker numbers so that we don't spawn wrecks on top of live helis
 
 //Civilian Vehicle List - Random Spawns
-civilianVehicles = ["c_offroad","B_Quadbike_F", "O_Quadbike_F"];
+civilianVehicles = ["c_offroad"];
 
 //Military Vehicle List - Random Spawns
 militaryVehicles = ["c_offroad","O_Ifrit_F","B_Hunter_F"];
@@ -60,22 +60,12 @@ armedMilitaryVehicles = ["B_Hunter_F","O_Ifrit_F"];
 objectList = ["Land_Sacks_goods_F",
 			"Land_HBarrierBig_F",
 			"Land_HBarrier_5_F",
-			"Land_JunkPile_F",
-			"Land_HBarrierBig_F",
 			"Land_HBarrier_1_F",
-			"Land_Tyres_F",
 			"Land_CanisterPlastic_F",
 			"Land_MetalBarrel_F",
 			"Land_HBarrierBig_F",
-			"Land_HBarrier_5_F",
-			"Land_ToiletBox_F",
 			"Land_HBarrier_3_F",
-			"Land_HBarrier_5_F",
-			"Land_Coil_F",
-			"Land_cargo_addon02_V2_F",
-			"Land_HBarrierBig_F",
-			"Land_Pipes_Large_F",
-			"Land_CargoBox_V1_F"];
+			"Land_HBarrierBig_F"];
                                          
 //Object List - Random Spawns.
 staticWeaponsList = ["B_MK6"];
@@ -86,7 +76,6 @@ staticHeliList = ["O_Ka60_Unarmed_F",
 
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons = ["arifle_SDAR_F",
-				"arifle_MXM_F",
 				"arifle_TRG21_F",
 				"arifle_TRG20_F",
 				"arifle_MXC_F",
@@ -121,10 +110,7 @@ vehicleAddition = [
             "ToolKit"
 ];
 
-vehicleAddition2 = [
-	"Chemlight_blue",
-	"Chemlight_green"
-];
+vehicleAddition2 = [];
  
                 
 MissionSpawnMarkers = [

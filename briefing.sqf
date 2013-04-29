@@ -205,7 +205,7 @@ player createDiaryRecord["changelog",
 		[MOVED] SOME REPAIR POINTS AT RUNWAY<br/>				
 		[REMOVED] BOAT REPAIR AREAS (HANDLING IS STUPID)<br/>		
 		<br/>
-		CHANGES FOR VV1.089<br/>
+		CHANGES FOR V1.0869<br/>
 		[ADDED] SDAR FOR ALL CLASSES ON SPAWN<br/>
 		<br/>
 "
@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.089(SPJESTER)",
+"1.0895(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -265,6 +265,21 @@ player createDiaryRecord["changelog",
 		[CHANGED] SOME OBSOLETE CODE PREPING FOR UPDATE<br/>	
 		[CHANGED] LABELING, THIS IS NOW THE FULL RELEASE<br/>
 		[CHANGED] START TIME TO 12AM<br/>
+		<br/>
+		CHANGES FOR V1.0892<br/>
+		[ADDED] WEATHER AND TIME CHANGE TO ADMIN PANEL<br/>
+		[FIXED] LOCAL MISSIONS NOT APPEARING<br/>
+		[TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
+		[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
+        <br/>				
+		CHANGES FOR V1.0894<br/>
+		[REMOVED] Food and Water System<br/>
+		[REMOVED] Food and Water items for FPS<br/>
+		<br/>
+		CHANGES FOR V1.0895<br/>
+		[TWEAKED] FEW THINGS IN CODE<br/>
+		[FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
+
 		"
 ]
 ];

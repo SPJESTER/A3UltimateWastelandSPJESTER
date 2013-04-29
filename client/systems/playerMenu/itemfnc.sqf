@@ -38,66 +38,6 @@ switch(_switch) do
 				[] call repairVehicle;
 			};
 
-			case "canfood": 
-			{
-            	// Check if mutex lock is active.
-				if(mutexScriptInProgress) exitWith {
-					player globalChat localize "STR_WL_Errors_InProgress";
-				};
-            
-            	mutexScriptInProgress = true;
-                _currState = animationState player;
-                
-				if((vehicle player) == player) then {player switchMove "AinvPknlMstpSnonWnonDnon_healed_1";};
-                
-                for "_i" from 1 to 50 do
-                {
-                	if (doCancelAction) exitWith {// Player selected "cancel action"
-    					mutexScriptInProgress = false;
-					}; 
-                	sleep 0.1;
-                };
-                
-                if (!(doCancelAction)) then {
-                	player setVariable["canfood",(player getVariable "canfood")-1,true];
-					hungerLevel = hungerLevel + 30;
-					if(hungerLevel > 100) then {hungerLevel = 100};
-                	mutexScriptInProgress = false;
-                } else {
-                	player switchMove _currState;
-                	doCancelAction = false;
-                };
-			};
-			case "water": 
-			{
-            	// Check if mutex lock is active.
-				if(mutexScriptInProgress) exitWith {
-					player globalChat localize "STR_WL_Errors_InProgress";
-				};
-            	
-                mutexScriptInProgress = true;
-                _currState = animationState player;
-                
-				if((vehicle player) == player) then {player switchMove "AinvPknlMstpSnonWnonDnon_healed_1";};
-                
-                for "_i" from 1 to 50 do
-                {
-                	if (doCancelAction) exitWith {// Player selected "cancel action"
-    					mutexScriptInProgress = false;
-					}; 
-                	sleep 0.1;
-                };
-                
-                if (!(doCancelAction)) then {
-                	player setVariable["water",(player getVariable "water")-1,true];
-					thirstLevel = thirstLevel + 50;
-					if(thirstLevel > 100) then {thirstLevel = 100};
-                	mutexScriptInProgress = false;
-                } else {
-                	player switchMove _currState;
-                	doCancelAction = false;
-                };     
-			};
 			case "medkit": 
 			{
 				if((damage player) < 0.25) exitwith {
@@ -156,11 +96,9 @@ switch(_switch) do
 		//Drops the item and sets values & variables
 		switch(_data) do 
 		{
-			case "canfood": {player setVariable["canfood",(player getVariable "canfood")-1,true]; _temp = "Land_Basket_F" createVehicle (position player); _temp setPos [(_pos select 0)+1, _pos select 1, _pos select 2]; _temp setVariable["food",10,true];};
 			case "fuelFull": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
 			case "fuelEmpty": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
 			case "repairkits": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
-			case "water": {player setVariable["water", (player getvariable "water")-1,true]; _temp = "Land_Bucket_F" createVehicle (position player); _temp setPos _pos;};
 			case "medkit": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
             case "spawnBeacon": {
             player setVariable["spawnBeacon", (player getVariable "spawnBeacon")-1,true]; 

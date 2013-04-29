@@ -11,8 +11,6 @@ _player setskill 0;
 _player setVariable ["BIS_noCoreConversations", true];
 
 enableSentences false;
-_player removeWeapon "ItemRadio";
-_player removeWeapon "ItemGPS";
 removeAllWeapons _player;
 removeBackpack _player;
 
@@ -22,10 +20,7 @@ _player addBackpack "B_AssaultPack_Base";
 _player addMagazine "16Rnd_9x21_Mag";
 _player addMagazine "16Rnd_9x21_Mag";
 _player addWeapon "hgun_P07_F";
-_player selectWeapon "hgun_P07_F";
-_player addItem "NVGoggles", _numMod;
-_player addWeapon "Binocular";	
-	
+_player selectWeapon "hgun_P07_F";	
 
 if(str(playerSide) in ["WEST"]) then
 {
@@ -40,8 +35,8 @@ if(str(playerSide) in ["WEST"]) then
 	_player addMagazine "30Rnd_65x39_caseless_mag"; 
 	_player addWeapon "arifle_MXC_ACO_point_F";
 	_player selectWeapon "hgun_P07_F";
-	_player addItem "NVGoggles", _numMod;
-	_player addItem "ItemGPS", _numMod;	
+	_player addItem "NVGoggles";
+	_player addItem "ItemGPS";
 	_player addWeapon "Binocular";	
 };
 
@@ -58,8 +53,8 @@ if(str(playerSide) in ["EAST"]) then
 	_player addMagazine "30Rnd_65x39_caseless_green"; 
 	_player addWeapon "arifle_Khaybar_ACO_point_F";
 	_player selectWeapon "hgun_Rook40_F";
-	_player addItem "NVGoggles", _numMod;
-	_player addItem "ItemGPS", _numMod;	
+	_player addItem "NVGoggles";
+	_player addItem "ItemGPS";
 	_player addWeapon "Binocular";	
 };
 
@@ -79,20 +74,15 @@ if(str(playerSide) in ["GUER"]) then
 	_player addMagazine "30Rnd_65x39_case_mag"; 
 	_player addWeapon "arifle_TRG20_ACO_F";
 	_player selectWeapon "hgun_P07_F";
-	_player addItem "NVGoggles", _numMod;
+	_player addItem "NVGoggles";
 	_player addWeapon "Binocular";	
 };
 
 _player addrating 1000000;
 _player switchMove "amovpknlmstpsraswpstdnon_gear";
 
-thirstLevel = 200;
-hungerLevel = 200;
-
 _player setVariable["cmoney",200,true];
-_player setVariable["canfood",1,false];
 _player setVariable["medkits",0,false];
-_player setVariable["water",1,false];
 _player setVariable["fuel",0,false];
 _player setVariable["repairkits",0,false];
 _player setVariable["fuelFull", 0, false];

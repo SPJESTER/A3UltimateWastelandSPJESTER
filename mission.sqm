@@ -41,8 +41,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="Ultimate Wasteland V1.089";
-		briefingDescription="Ultimate Wasteland is a harsh war/survival sandbox edited by: SPJESTER";
+		briefingName="Ultimate Wasteland V1.0895";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0.29999998;
@@ -56,6 +55,8 @@ class Mission
 		day=25;
 		hour=12;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 	class Groups
 	{
@@ -788,7 +789,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3771.0906,15.171033,7926.0693};
+					position[]={3771.0891,15.171033,7926.0693};
 					special="NONE";
 					id=50;
 					side="GUER";
@@ -868,7 +869,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3771.0906,15.171033,7926.0693};
+					position[]={3771.0891,15.171033,7926.0693};
 					special="NONE";
 					id=54;
 					side="GUER";
@@ -3930,6 +3931,8 @@ class Intro
 		day=25;
 		hour=16;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroWin
@@ -3958,6 +3961,8 @@ class OutroWin
 		day=25;
 		hour=16;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroLoose
@@ -3986,5 +3991,7 @@ class OutroLoose
 		day=25;
 		hour=16;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };

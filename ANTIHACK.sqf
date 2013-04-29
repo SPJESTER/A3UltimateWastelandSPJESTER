@@ -5,20 +5,20 @@ diag_log "ANTI-HACK 0.6.3 starting...";
 AHAH = {
     diag_log "ANTI-HACK 0.6.3 starting...";
     if (isServer) exitWith {};
-    _commonPaths = ["used for hacking", "wuat\screen.sqf", "scripts\defaultmenu.sqf", "menu\initmenu.sqf", "scr\exec.sqf", "scripts\exec.sqf",
+    _commonPaths = ["used for hacking", "wuat\screen.sqf", "scripts\defaultmenu.sqf", "menu\initmenu.sqf", "scr\exec.sqf",
       "crinkly\keymenu.sqf", "menu\exec.sqf", "wuat\exec.sqf", "crinkly\keymenu.sqf", "scripts\ajmenu.sqf", "startup.sqf", "exec.sqf", "wookie_wuat\startup.sqf"
     ]; {
         _contents = format["", loadFile _x];
         if (_contents != "") then {
                 diag_log "ANTI-HACK 0.6.3: hacker?!";
-				player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me.";
                 hackFlag = [player, "hack menu", _x];
                 publicVariableServer "hackFlag";
                 sleep 5;
-                for "_i"
+				player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
+				for "_i"
                 from 0 to 99 do {
-                    (findDisplay _i) closeDisplay 0;
-                };
+					(findDisplay _i) closeDisplay 0;
+			};
         };
     }
     forEach _commonPaths;
@@ -54,11 +54,11 @@ AHAH = {
             {
                 if !(isNil _x) exitWith {
                     diag_log "ANTI-HACK 0.6.3: Found a Hack Variable!";
-					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "hacked variable", _x];
                     publicVariableServer "hackFlag";
                     sleep 5;
-                    for "_i"
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
+					for "_i"
                     from 0 to 99 do {
                         (findDisplay _i) closeDisplay 0;
                     };
@@ -81,11 +81,11 @@ AHAH = {
             if (!(isNull findDisplay 3030) || !(isNull findDisplay 155)) then {
  
                     diag_log "ANTI-HACK 0.6.3: Found a Hack Menu!";
-					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "hack menu", _x];
                     publicVariableServer "hackFlag";
                     sleep 5;
-                    for "_i"
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
+					for "_i"
                     from 0 to 99 do {
                         (findDisplay _i) closeDisplay 0;
                     };
@@ -104,11 +104,11 @@ AHAH = {
         do {
             if (unitRecoilCoefficient player != _recoilSettings) exitWith {
                     diag_log "ANTI-HACK 0.6.3: Detected No-Recoil Hack!";
-					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
                     hackFlag = [player, "no recoil", "null"];
                     publicVariableServer "hackFlag";
                     sleep 5;
-                    for "_i"
+					player globalChat "Was Kicked/Crashed for Using Hacks, Please Report Me"; 
+					for "_i"
                     from 0 to 99 do {
                         (findDisplay _i) closeDisplay 0;
                     };
