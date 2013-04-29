@@ -19,9 +19,13 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 					"Vehicle Management",
 					"Tags",
 					"Teleport",
-	                "Money",
-	                "Debug Menu"
-	];
+	                "Money",					
+	                "Debug Menu",
+	                "Set time 9AM",					
+	                "Set time 9PM",					
+	                "Stormy Weather",					
+	                "Sunny Weather"				
+				];
 	
 	{
 		_serverAdminSelect lbAdd _x;
