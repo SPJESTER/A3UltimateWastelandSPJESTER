@@ -6,16 +6,6 @@ _switch = _this select 0;
 _dialog = findDisplay playersys_DIALOG;
 _itemList = _dialog displayCtrl item_list;
 
-if(player getVariable "canfood" > 0) then {
-	_itemListIndex = _itemList lbAdd format["%1x - Canned Food", player getVariable "canfood"];
-	_itemList lbSetData [(lbSize _itemList)-1, "canfood"];
-};
-
-if(player getVariable "water" > 0) then {
-	_itemListIndex = _itemList lbAdd format["%1x - Water bottle", player getVariable "water"];
-	_itemList lbSetData [(lbSize _itemList)-1, "water"];
-};
-
 if(player getVariable "fuelFull" == 1) then {
 	_itemListIndex = _itemList lbAdd "Fuel Can";
 	_itemList lbSetData [(lbSize _itemList)-1, "fuelFull"];

@@ -1,11 +1,11 @@
-Ultimate Wasteland by SPJESTER V1.0892
+Ultimate Wasteland by SPJESTER V1.0894
 ==================================
 Based off of GoT Wasteland V1.08(D)
 
 All credits for Wasteland go to 404Games and their DEV's
 This is just my alteration.
 
-current status: V1.0892 (Complete Edition)
+current status: V1.0894 (Complete Edition)
 
 If you are not famillair with creating PBO files, grab the ready-to-go-PBO here: 
 https://github.com/JoSchaap/Arma3_Binary_PBO
@@ -158,6 +158,10 @@ CHANGES FOR V1.0892<br/>
 [FIXED] LOCAL MISSIONS NOT APPEARING<br/>
 [TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
 [BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
+
+CHANGES FOR V1.0894<br/>
+[REMOVED] Food and Water System<br/>
+[REMOVED] Food and Water items for FPS<br/>
 
 
 Please be reminded that i did NOT create this mission from scratch, most of the work has been done by the awesome DEV-team @ 404Games. Im just the huy that had some spare time to make it work in ArmA3Alpha :)

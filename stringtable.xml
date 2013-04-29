@@ -84,14 +84,8 @@
 		</Key>
 	</Package>
 	<Package name="ShopDescriptions">
-		<Key ID="STR_WL_ShopDescriptions_Water">
-			<English>Premium Spring Water. This water contains 200% more flavour than other leading brands.</English>
-		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Camo">
 			<English>Become a ninja, hide yourself while camping. Warning this does not make you invisible</English>
-		</Key>
-		<Key ID="STR_WL_ShopDescriptions_CanFood">
-			<English>Canned Food. Heat treated and sealed in a 100% steel can for extra long shelf life. Warning: contents may contain organs.</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_RepairKit">
 			<English>The ultimate tool for the Technicians in your team, needed to perform repairs.</English>

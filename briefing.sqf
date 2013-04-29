@@ -205,7 +205,7 @@ player createDiaryRecord["changelog",
 		[MOVED] SOME REPAIR POINTS AT RUNWAY<br/>				
 		[REMOVED] BOAT REPAIR AREAS (HANDLING IS STUPID)<br/>		
 		<br/>
-		CHANGES FOR VV1.0892<br/>
+		CHANGES FOR V1.0869<br/>
 		[ADDED] SDAR FOR ALL CLASSES ON SPAWN<br/>
 		<br/>
 "
@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.0892(SPJESTER)",
+"1.0894(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -270,7 +270,11 @@ player createDiaryRecord["changelog",
 		[ADDED] WEATHER AND TIME CHANGE TO ADMIN PANEL<br/>
 		[FIXED] LOCAL MISSIONS NOT APPEARING<br/>
 		[TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
-		[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>		
+		[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
+        <br/>				
+		CHANGES FOR V1.0894<br/>
+		[REMOVED] Food and Water System<br/>
+		[REMOVED] Food and Water items for FPS<br/>
 		"
 ]
 ];

@@ -28,25 +28,6 @@ for [{_x=0},{_x<=_size},{_x=_x+1}] do
 	_itemText = _cartlist lbText _x;
     switch (_itemText) do {
         
-        case "Water": {
-            if((player getVariable "water") + 1 <= 4) then {
-                player setVariable["water",(player getVariable "water") + 1,true];	
-            } else {
-                _price = 0;
-                {if(_x select 0 == "Water") then{_price = _x select 4;};}forEach generalStore;
-            	genStoreCart = genStoreCart - _price;    
-            };
-        };
-        
-		case "Canned Food":	{
-            if((player getVariable "canfood") + 1 <= 4) then {
-                player setVariable["canfood",(player getVariable "canfood") + 1,true];
-            } else {
-            	_price = 0;
-                {if(_x select 0 == "Canned Food") then{_price = _x select 4;};}forEach generalStore;
-            	genStoreCart = genStoreCart - _price;    
-            };
-        };
         
 		case "Medical Kit": {
             if((player getVariable "medkits") + 1 <= 2) then {

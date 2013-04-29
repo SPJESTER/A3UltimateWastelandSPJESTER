@@ -41,7 +41,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="Ultimate Wasteland V1.0892";
+		briefingName="Ultimate Wasteland V1.0894";
 		briefingDescription="Ultimate Wasteland is a harsh war/survival sandbox edited by: SPJESTER";
 		resistanceWest=0;
 		startWeather=0;
