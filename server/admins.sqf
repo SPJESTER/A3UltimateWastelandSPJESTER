@@ -8,7 +8,8 @@ publicVariable "moderators";
 administrators = [];
 publicVariable "administrators";
 
-serverAdministrators = [
-
-                    ]; 
+//PAY ATTENTION TO THE COMMAS
+serverAdministrators = ["STEAMIDHERE", //username
+						"STEAMIDHERE" //username
+							]; 
 publicVariable "serverAdministrators";

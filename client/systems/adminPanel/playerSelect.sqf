@@ -70,19 +70,27 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 				camDestroy _camadm;
 			};
 		};
-		case 1: //Warn
+		case 1: //Ban
 		{
 			_warnText = ctrlText _warnMessage;
 	        _playerName = name player;
-			_target setVehicleInit format["if (name player == ""%2"") then {titleText [""Admin %3: %1"", ""plain""]; titleFadeOut 10;};",_warnText,name _target,_playerName];
-	        processInitCommands;
+		
+		_targetForm = format["if (name player == ""%2"") then {titleText [""Admin %3: %1"", ""plain""]; titleFadeOut 10;};",_warnText,name _target,_playerName];
+
+	        [[netID _target, _targetForm], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+
+		sleep 3;
+		serverCommand format["#exec ban ", _playerName];
+		serverCommand format["#kick ", _playerName];
 	        clearVehicleInit _target;
 		};
 	    case 2: //Slay
 	    {
-			_target setVehicleInit format["if (name player == ""%1"") then {player setdamage 1; Endmission ""END1"";failMission ""END1"";forceEnd; deletevehicle player;};",name _target];
-			processInitCommands;
-			clearVehicleInit _target;
+			_targetForm = format["if (name player == ""%1"") then {player setdamage 1; Endmission ""END1"";failMission ""END1"";forceEnd; deletevehicle player;};",name _target];
+
+			[[netID _target, _targetForm], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+			
+			//clearVehicleInit _target;
 	    };
 	    case 3: //Unlock Team Switcher
 	    {      
@@ -94,13 +102,17 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 					pvar_teamSwitchList = pvar_teamSwitchList - ["REMOVETHISCRAP"];
 			        publicVariableServer "pvar_teamSwitchList";
 	                
-	                _target setVehicleInit format["if (name player == ""%1"") then {client_firstSpawn = nil;};",name _target];
-			        processInitCommands;
-			        clearVehicleInit _target;
+	                _targetForm = format["if (name player == ""%1"") then {client_firstSpawn = nil;};",name _target];
+
+
+			[[netID _target, _targetForm], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+			        
 	                
-	                player setVehicleInit format["if isServer then {publicVariable 'pvar_teamSwitchList';};"];
-			        processInitCommands;
-			        clearVehicleInit player;         
+	                _pform = format["if isServer then {publicVariable 'pvar_teamSwitchList';};"];
+
+
+			[[netID player, _pform], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+			  
 			    };
 			}forEach pvar_teamSwitchList;			
 	    };
@@ -114,9 +126,11 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 					pvar_teamKillList = pvar_teamKillList - ["REMOVETHISCRAP"];
 			        publicVariableServer "pvar_teamKillList"; 
 	                
-	                player setVehicleInit format["if isServer then {publicVariable 'pvar_teamKillList';};"];
-			        processInitCommands;
-			        clearVehicleInit player;       
+	                _pform  = format["if isServer then {publicVariable 'pvar_teamKillList';};"];
+
+
+			[[netID player, _pform], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+			
 			    };
 			}forEach pvar_teamKillList;       		
 	    };

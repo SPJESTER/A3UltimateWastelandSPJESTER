@@ -39,7 +39,7 @@ Global_gvs_watcher_handle = nil;
 //	@file Description: The main init.
 //	@file Args:
 #include "setup.sqf"
-
+#include "patch.sqf"
 StartProgress = false;
 enableSaving[false,false];
 
@@ -109,7 +109,7 @@ if (!isDedicated) then {
 };
 
 //TWEAKS
-if (viewdistance < 1700) then { setviewdistance 2000 };
+setviewdistance 2200;
 setTerrainGrid 25;
 waituntil {!isnil "bis_fnc_init"};
 

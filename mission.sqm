@@ -41,7 +41,8 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="Ultimate Wasteland V1.0895";
+		briefingName="Ultimate Wasteland V1.0896";
+		briefingDescription="An all out action packed warfare Wasteland Mission. Kill or be killed";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0.29999998;
@@ -55,8 +56,6 @@ class Mission
 		day=25;
 		hour=12;
 		minute=0;
-		startFogDecay=0.0049333;
-		forecastFogDecay=0.0049333;
 	};
 	class Groups
 	{
@@ -3931,8 +3930,6 @@ class Intro
 		day=25;
 		hour=16;
 		minute=0;
-		startFogDecay=0.0049333;
-		forecastFogDecay=0.0049333;
 	};
 };
 class OutroWin
@@ -3961,8 +3958,6 @@ class OutroWin
 		day=25;
 		hour=16;
 		minute=0;
-		startFogDecay=0.0049333;
-		forecastFogDecay=0.0049333;
 	};
 };
 class OutroLoose
@@ -3991,7 +3986,5 @@ class OutroLoose
 		day=25;
 		hour=16;
 		minute=0;
-		startFogDecay=0.0049333;
-		forecastFogDecay=0.0049333;
 	};
 };

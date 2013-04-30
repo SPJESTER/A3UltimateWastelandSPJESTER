@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.0895(SPJESTER)",
+"1.0896(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -279,7 +279,12 @@ player createDiaryRecord["changelog",
 		CHANGES FOR V1.0895<br/>
 		[TWEAKED] FEW THINGS IN CODE<br/>
 		[FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
-
+		<br/>
+		CHANGES FOR V1.0896<br/>
+		[ADDED] BACKPACKS AND DIVER GOGGLES TO GUNSTORE<br/>
+		[ADDED] HD PATCH SCRIPT (Fussion)<br/>
+		[TWEAKED] WEAPON LOADOUT ITEMS<br/>
+		[CONVERTED] OLDER SCRIPTS TO NEW CODE<br/>
 		"
 ]
 ];

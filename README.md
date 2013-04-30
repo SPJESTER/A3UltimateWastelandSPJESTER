@@ -1,4 +1,4 @@
-Ultimate Wasteland by SPJESTER V1.0895
+Ultimate Wasteland by SPJESTER V1.0896
 ==================================
 Based off of GoT Wasteland V1.08(D)
 
@@ -166,6 +166,12 @@ CHANGES FOR V1.0894<br/>
 CHANGES FOR V1.0895<br/>
 [TWEAKED] FEW THINGS IN CODE<br/>
 [FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
+
+CHANGES FOR V1.0896<br/>
+[ADDED] BACKPACKS AND DIVER GOGGLES TO GUNSTORE<br/>
+[ADDED] HD PATCH SCRIPT (Fussion)<br/>
+[TWEAKED] WEAPON LOADOUT ITEMS<br/>
+[CONVERTED] OLDER SCRIPTS TO NEW CODE<br/>
 
 		
 Please be reminded that i did NOT create this mission from scratch, most of the work has been done by the awesome DEV-team @ 404Games. Im just the huy that had some spare time to make it work in ArmA3Alpha :)

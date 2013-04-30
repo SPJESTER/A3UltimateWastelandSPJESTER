@@ -59,7 +59,11 @@ for "_i" from 0 to ((count _objs) - 1) do
 		_newObj setPos _newPos;
 		if (!isNil "_fuel") then {_newObj setFuel _fuel};
 		if (!isNil "_damage") then {_newObj setDamage _damage};
-		if (!isNil "_vehicleinit") then {_newObj call compile format ["%1;",_vehicleinit]};
+		if (!isNil "_vehicleinit") then {
+		_pform = format ["%1;",_vehicleinit];
+		[[netID _newObj, _pform], "FNC_setVehicleInit", true, true] spawn BIS_fnc_MP;
+			};
+			
 		_newObjs = _newObjs + [_newObj];
 	
 };

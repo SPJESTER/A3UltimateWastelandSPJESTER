@@ -37,6 +37,7 @@ if(str(playerSide) in ["WEST"]) then
 	_player selectWeapon "hgun_P07_F";
 	_player addItem "NVGoggles";
 	_player addItem "ItemGPS";
+	_player addItem "acc_flashlight";
 	_player addWeapon "Binocular";	
 };
 
@@ -55,6 +56,7 @@ if(str(playerSide) in ["EAST"]) then
 	_player selectWeapon "hgun_Rook40_F";
 	_player addItem "NVGoggles";
 	_player addItem "ItemGPS";
+	_player addItem "acc_flashlight";
 	_player addWeapon "Binocular";	
 };
 
@@ -75,6 +77,8 @@ if(str(playerSide) in ["GUER"]) then
 	_player addWeapon "arifle_TRG20_ACO_F";
 	_player selectWeapon "hgun_P07_F";
 	_player addItem "NVGoggles";
+	_player addItem "ItemGPS";
+	_player addItem "acc_flashlight";
 	_player addWeapon "Binocular";	
 };
 
