@@ -20,11 +20,7 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 					"Tags",
 					"Teleport",
 	                "Money",					
-	                "Debug Menu",
-	                "Set time 12AM",					
-	                "Set time 12PM",					
-	                "Stormy Weather",					
-	                "Sunny Weather"				
+	                "Debug Menu"								
 				];
 	
 	{

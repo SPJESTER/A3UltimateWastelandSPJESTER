@@ -26,15 +26,15 @@ AHAH = {
     [] spawn {
         private["_sleepVariableCheck", "_badPublicVariables"];
         _sleepVariableCheck = 30;
-        _badPublicVariables = ["p", "fffffffffff", "markPos", "pos", "marker", "TentS", "VL", "MV",
+        _badPublicVariables = ["p", "fffffffffff", "markPos", "pos", ""TentS", "VL", "MV",
 		"mk2", "i", "j", "fuckmegrandma", "mehatingjews", "scode", "TTT5OptionNR",
 		"igodokxtt", "omgwtfbbq", "namePlayer", "thingtoattachto", "HaxSmokeOn", "v",
 		"antiloop", "ARGT_JUMP", "selecteditem", "moptions", "delaymenu", "gluemenu",
-		"spawnweapons1", "abcd", "skinmenu", "playericons", "changebackpack", "keymenu",
+		"spawnweapons1", "abcd", "skinmenu", "changebackpack", "keymenu",
 		"img", "surrmenu", "footSpeedIndex", "ctrl_onKeyDown", "plrshldblcklst",
 		"musekeys", "dontAddToTheArray", "morphtoanimals", "playerDistanceScreen", "pm",
 		"debugConsoleIndex", "MY_KEYDOWN_FNC", "TAG_onKeyDown", "changestats", "helpmenu",
-		"unitsmenu", "xZombieBait", "shnmenu", "slag", "xtags", "tempslag", "dayzRespawn2", "dayzRespawn3",
+		"unitsmenu", "xZombieBait", "shnmenu", "slag", "tempslag", "dayzRespawn2", "dayzRespawn3",
 		"hangender", "BIS_fnc_3dCredits_n", "ViLayer", "maphalf", "activeITEMlist",
 		"activeITEMlistanzahl", "xyzaa", "iBeFlying", "rem", "DAYZ_CA1_Lollipops", "bowonky", "HMDIR", "HDIR",
 		"Monky_funcs_inited", "atext", "boost", "Ug8YtyGyvguGF", "inv", "rspwn", "nd", "qofjqpofq",

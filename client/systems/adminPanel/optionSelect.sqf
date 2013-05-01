@@ -96,26 +96,6 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 	            	closeDialog 0;   
 	                execVM "client\systems\adminPanel\loadDebugMenu.sqf";
 			    };
-	            case 6: //Set time 12am
-			    {   
-	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\12am.sqf";
-			    };				
-	            case 7: //Set time 12pm
-			    {   
-	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\12pm.sqf";
-			    };	
-	            case 8: //Stormy Weather
-			    {   
-	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\stormy.sqf";
-			    };				
-	            case 9: //Sunny Weather
-			    {   
-	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\sunny.sqf";
-			    };	
 			};
 	    };
 	    case 3: //Debug panel
