@@ -108,12 +108,6 @@ if (!isDedicated) then {
 	} foreach (nearestObjects[[0,0], R3F_LOG_CFG_objets_deplacables, 20000]); 
 };
 
-//TWEAKS
-setviewdistance 2200;
-setTerrainGrid 25;
-waituntil {!isnil "bis_fnc_init"};
-
-
 //ANTIHACK 0.6.3
 if (isServer) then {
     [] execVM "ANTIHACK.sqf";
@@ -128,4 +122,7 @@ if (isServer) then {
 //Proving Grounds
 [] execVM "addons\proving_Ground\init.sqf";
 
+//TWEAKS
+setviewdistance 2200;
+setTerrainGrid 25;
 

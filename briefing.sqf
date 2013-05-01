@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.0896(SPJESTER)",
+"1.0897(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -285,7 +285,29 @@ player createDiaryRecord["changelog",
 		[ADDED] HD PATCH SCRIPT (Fussion)<br/>
 		[TWEAKED] WEAPON LOADOUT ITEMS<br/>
 		[CONVERTED] OLDER SCRIPTS TO NEW CODE<br/>
+		<br/>		
+		CHANGES FOR V1.0897<br/>
+		[FIXED] BACKPACKS IN GUNSTORE<br/>
+		[TWEAKED] A FEW MORE SCRIPTS<br/>
+		[TWEAKED] ANTI-HACK AGAIN<br/>
+		[FIXED] WEATHER/TIME ADMIN SCRIPT<br/>
+		[CLEANED] UP SOME CODE<br/>
+		[ATTEMPTED] TO ADD MORE PLAYER SUPPORT<br/>
 		"
+]
+];
+
+player createDiaryRecord["changelog",
+[
+"BUG TRACKER",
+"
+<br/>
+		CURRENT BUGLIST:<br/>
+		SOME OF ADMIN PANEL IS BROKEN<br/>
+		WEAPON ADDONS SOMETIMES DISAPPEAR<br/>
+		[*LET ME KNOW IF FOUND MORE* -SPJESTER]<br/>
+		<br/>
+"
 ]
 ];
 

@@ -89,22 +89,22 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 			    };
 	            case 4: //Money
 			    {      
-					player setVariable["cmoney", (player getVariable "cmoney")+1000,true];
+					player setVariable["cmoney", (player getVariable "cmoney")+2000,true];
 			    };
 	            case 5: //Debug Menu
 			    {   
 	            	closeDialog 0;   
 	                execVM "client\systems\adminPanel\loadDebugMenu.sqf";
 			    };
-	            case 6: //Set time 9am
+	            case 6: //Set time 12am
 			    {   
 	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\9am.sqf";
+	                execVM "client\systems\adminPanel\12am.sqf";
 			    };				
-	            case 7: //Set time 9pm
+	            case 7: //Set time 12pm
 			    {   
 	            	closeDialog 0;   
-	                execVM "client\systems\adminPanel\9pm.sqf";
+	                execVM "client\systems\adminPanel\12pm.sqf";
 			    };	
 	            case 8: //Stormy Weather
 			    {   

@@ -17,8 +17,15 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 	
 	_panelOptions = ["Player Menu",
 					"Vehicle Management",
-					"Tags"
-	];
+					"Tags",
+					"Teleport",
+	                "Money",					
+	                "Debug Menu",
+	                "Set time 9AM",					
+	                "Set time 9PM",					
+	                "Stormy Weather",					
+	                "Sunny Weather"				
+				];
 	
 	{
 		_adminSelect lbAdd _x;

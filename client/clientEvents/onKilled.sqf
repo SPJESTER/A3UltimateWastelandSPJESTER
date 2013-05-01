@@ -7,9 +7,6 @@
 _player = (_this select 0) select 0;
 _killer = (_this select 0) select 1;
 if(isnil {_player getVariable "cmoney"}) then {_player setVariable["cmoney",0,true];};
-//diag_log (unitBackpack _player);
-clearMagazineCargoGlobal (unitBackpack _player);
-removebackpack _player;
 PlayerCDeath = [_player];
 publicVariable "PlayerCDeath";
 if (isServer) then {

@@ -1,4 +1,4 @@
-Ultimate Wasteland by SPJESTER V1.0896
+Ultimate Wasteland by SPJESTER V1.0897
 ==================================
 Based off of GoT Wasteland V1.08(D)
 
@@ -167,7 +167,7 @@ CHANGES FOR V1.0895<br/>
 [TWEAKED] FEW THINGS IN CODE<br/>
 [FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
 
-CHANGES FOR V1.0896<br/>
+CHANGES FOR V1.0897<br/>
 [ADDED] BACKPACKS AND DIVER GOGGLES TO GUNSTORE<br/>
 [ADDED] HD PATCH SCRIPT (Fussion)<br/>
 [TWEAKED] WEAPON LOADOUT ITEMS<br/>
