@@ -21,8 +21,8 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 					"Teleport",
 	                "Money",					
 	                "Debug Menu",
-	                "Set time 9AM",					
-	                "Set time 9PM",					
+	                "Set time 12AM",					
+	                "Set time 12PM",					
 	                "Stormy Weather",					
 	                "Sunny Weather"				
 				];
