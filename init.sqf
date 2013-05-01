@@ -1,4 +1,4 @@
-// PRELOAD SCRIPTS BEGIN
+// =======================================================
 // EXPLOIT HACKER FIX ATTEMPT
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {};
 	BIS_fnc_MP = {};
@@ -9,27 +9,6 @@ player groupChat "Clearing BIS_fnc Command";
 waituntil {!isnil "bis_fnc_init"};
 player groupChat "BIS_fnc Clear Complete";
 
-// Dynamic Weather Changer
-[] execVM "Scripts\DRN\DynamicWeatherEffects\DynamicWeatherEffects.sqf";
- 
-//JESTERS MENU
-[] execVM "jestersMENU\jester@start.sqf";
-
-// WIP
-//nul = [] execVM "rslo\rslo_init.sqf";
-
-//TAW VIEW DISTANCE
-enableSaving[false,false];
-[] execVM "taw_vd\init.sqf";
-
-//Vehicle Service Script
-call compile preProcessFile "cfg_lookup.sqf";
-call compile preProcessFile "simple_text_control.sqf";
-call compile preProcessFile "gvs_watcher.sqf";
-Global_GVS_InUse = 0;
-Global_gvs_watcher_handle = nil;
-
-// =======================================================
 
 // START MISSION
 //	@file Version: 1.1
@@ -61,6 +40,39 @@ true spawn {
 	};
 };
 
+// LOAD SCRIPTS BEGIN
+// Dynamic Weather Changer
+[] execVM "Scripts\DRN\DynamicWeatherEffects\DynamicWeatherEffects.sqf";
+ 
+//JESTERS MENU
+[] execVM "jestersMENU\jester@start.sqf";
+
+// WIP
+//nul = [] execVM "rslo\rslo_init.sqf";
+
+//TAW VIEW DISTANCE
+enableSaving[false,false];
+[] execVM "taw_vd\init.sqf";
+
+//Vehicle Service Script
+call compile preProcessFile "cfg_lookup.sqf";
+call compile preProcessFile "simple_text_control.sqf";
+call compile preProcessFile "gvs_watcher.sqf";
+Global_GVS_InUse = 0;
+Global_gvs_watcher_handle = nil;
+
+
+//ANTIHACK 0.6.3
+if (isServer) then {
+    [] execVM "ANTIHACK.sqf";
+} else {
+    "AHAH" addPublicVariableEventHandler
+{[] spawn (_this select 1);
+};
+    clientStarted = player;
+    publicVariableServer "clientStarted";
+};
+
 //init Wasteland Core
 [] execVM "config.sqf";
 [] execVM "briefing.sqf";
@@ -80,7 +92,10 @@ if(X_Client) then {
 
 if(X_Server) then {
 	diag_log format ["############################# %1 #############################", missionName];
-	diag_log format["WASTELAND SERVER - Initilizing Server"];
+	#ifdef __DEBUG__
+	diag_log format ["T%1,DT%2,F%3", time, diag_tickTime, diag_frameno];
+	#endif
+    diag_log format["WASTELAND SERVER - Initilizing Server"];
 	[] execVM "server\init.sqf";
 };
 
@@ -108,21 +123,10 @@ if (!isDedicated) then {
 	} foreach (nearestObjects[[0,0], R3F_LOG_CFG_objets_deplacables, 20000]); 
 };
 
-//ANTIHACK 0.6.3
-if (isServer) then {
-    [] execVM "ANTIHACK.sqf";
-} else {
-    "AHAH" addPublicVariableEventHandler
-{[] spawn (_this select 1);
-};
-    clientStarted = player;
-    publicVariableServer "clientStarted";
-};
 
 //Proving Grounds
 [] execVM "addons\proving_Ground\init.sqf";
 
 //TWEAKS
-setviewdistance 2200;
 setTerrainGrid 25;
-
+setviewdistance 2200;

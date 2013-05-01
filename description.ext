@@ -7,7 +7,7 @@ class Header
 {
 	gameType=Wasteland;
 	minPlayers=1;
-	maxPlayers=120;
+	maxPlayers=106;
 };
 author = "SPJESTER";
 OnLoadName = "Ultimate Wasteland";
@@ -28,11 +28,11 @@ OnLoadName = "Ultimate Wasteland";
 #include "client\systems\playerMenu\dialog\teamkill_dialog.hpp"
 #include "addons\proving_ground\PG_config.hpp"
 #include "taw_vd\dialog.hpp"
-#include <rslo\gui.hpp>
-#include <rgm\rgm_gui.hpp>
-#include <colors_include.hpp>
-#include <control_include.hpp>
-#include <stc_include.hpp>
+#include "rslo\gui.hpp"
+#include "rgm\rgm_gui.hpp"
+#include "colors_include.hpp"
+#include "control_include.hpp"
+#include "stc_include.hpp"
 
 
 class RscTitles {

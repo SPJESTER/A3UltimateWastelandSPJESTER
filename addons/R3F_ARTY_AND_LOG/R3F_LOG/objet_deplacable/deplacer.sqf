@@ -26,7 +26,7 @@ else
 	
 	R3F_LOG_objet_selectionne = objNull;
 	
-	private ["_objet", "_est_calculateur", "_arme_principale", "_action_menu_release_relative", "_action_menu_release_horizontal" , "_action_menu_45", "_action_menu_90", "_action_menu_180", "_azimut_canon", "_weapitems"];
+	private ["_objet", "_est_calculateur", "_arme_principale", "_arme_principale_accessoires", "_arme_principale_magasines", "_action_menu_release_relative", "_action_menu_release_horizontal" , "_action_menu_45", "_action_menu_90", "_action_menu_180", "_azimut_canon", "_muzzles", "_magazine", "_ammo"];
 	
 	_objet = _this select 0;
 	if(isNil {_objet getVariable "R3F_Side"}) then {
@@ -62,7 +62,7 @@ else
 		{
 // [givin up someone feel free to help out..]	{_weapitems = PrimaryWeaponItems _arme_principale;}foreach PrimaryWeaponItems _arme_principale;
 			player playMove "AidlPercMstpSnonWnonDnon04";
-			sleep 1;
+			sleep 1.5;
 			player removeWeapon _arme_principale;
 		}
 		else {sleep 0.5;};
@@ -175,12 +175,32 @@ else
 				if(primaryWeapon player != "") then {
 					_o = createVehicle ["WeaponHolder", player modelToWorld [0,0,0], [], 0, "NONE"];
 					_o addWeaponCargoGlobal [_arme_principale, 1];
-				} else {
+				}
+				else {
+
+					diag_log format["%1", count _arme_principale_magasines];
+
+					{
+						_magazine = _x select 0;
+						_ammo = _x select 1;
+						diag_log format["Mag: %1", _magazine];
+						diag_log format["Ammo: %1", _ammo];
+						if(_magazine != "" && _ammo > 0) then {
+							//_magazine = _x;
+							player addMagazine _x;
+							// waitUntil { {_magazine == toLower(_x) } count (magazines player) > 0 };
+						};
+					} forEach _arme_principale_magasines; // add all default primery weapon magazines
+
+
 					player addWeapon _arme_principale;
-// [givin up someone feel free to help out..]						if (!isnill _weapitems) then
-// [givin up someone feel free to help out..]						{
-// [givin up someone feel free to help out..]							_arme_principale addPrimaryWeaponItem _x;
-// [givin up someone feel free to help out..]						} foreach _weapitems;
+
+					{ if(_x!="") then { player addPrimaryWeaponItem _x; }; } foreach (_arme_principale_accessoires);
+
+
+
+
+
 					player selectWeapon _arme_principale;
 					player selectWeapon (getArray (configFile >> "cfgWeapons" >> _arme_principale >> "muzzles") select 0);
 				};

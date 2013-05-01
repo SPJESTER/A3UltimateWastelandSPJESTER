@@ -21,6 +21,11 @@ CVG_weapons = CVG_weapons + CVG_Heavy;
 CVG_weapons = CVG_weapons + CVG_pistols;
 CVG_weapons = CVG_weapons + CVG_Launchers;
 
+
+#ifdef __A2NET__
+missionStartTime = 0;
+netTime = 0;
+#endif
 sideMissionPos = "";
 mainMissionPos = "";
 
@@ -48,7 +53,7 @@ publicVariable "currentInvites";
 currentStaticHelis = []; // Storage for the heli marker numbers so that we don't spawn wrecks on top of live helis
 
 //Civilian Vehicle List - Random Spawns
-civilianVehicles = ["c_offroad"];
+civilianVehicles = ["c_offroad","B_Quadbike_F", "O_Quadbike_F"];
 
 //Military Vehicle List - Random Spawns
 militaryVehicles = ["c_offroad","O_Ifrit_F","B_Hunter_F"];
@@ -57,7 +62,8 @@ militaryVehicles = ["c_offroad","O_Ifrit_F","B_Hunter_F"];
 armedMilitaryVehicles = ["B_Hunter_F","O_Ifrit_F"];
                             
 //Object List - Random Spawns.
-objectList = ["Land_Sacks_goods_F",
+objectList = ["Land_Barrelwater_F",
+			"Land_Sacks_goods_F",
 			"Land_HBarrierBig_F",
 			"Land_HBarrier_5_F",
 			"Land_HBarrier_1_F",
@@ -66,7 +72,7 @@ objectList = ["Land_Sacks_goods_F",
 			"Land_HBarrierBig_F",
 			"Land_HBarrier_3_F",
 			"Land_HBarrierBig_F"];
-                                         
+                                
 //Object List - Random Spawns.
 staticWeaponsList = ["B_MK6"];
 
@@ -75,7 +81,8 @@ staticHeliList = ["O_Ka60_Unarmed_F",
 					"B_MH9_F"];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
-vehicleWeapons = ["arifle_SDAR_F",
+vehicleWeapons = ["arifle_MXM_F",
+				"arifle_SDAR_F",
 				"arifle_TRG21_F",
 				"arifle_TRG20_F",
 				"arifle_MXC_F",
@@ -110,7 +117,12 @@ vehicleAddition = [
             "ToolKit"
 ];
 
-vehicleAddition2 = [];
+vehicleAddition2 = [
+	"Chemlight_blue",
+	"Chemlight_green",
+	"Chemlight_yellow",
+	"Chemlight_red"
+];
  
                 
 MissionSpawnMarkers = [
