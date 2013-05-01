@@ -96,8 +96,7 @@ _player setVariable["camonet",0,false];
 
 [] execVM "client\functions\playerActions.sqf";
 
-//_player groupChat format["Server Initialization Complete"];
-_player groupChat format["Server Initialization Complete / If you like the server, and would like to help keep it up	, Visit http://oblgaming.tk"];
+_player groupChat format["Server Initialization Complete"];
 playerSetupComplete = true;
 
 
