@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.0897(SPJESTER)",
+"1.0898(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -296,7 +296,10 @@ player createDiaryRecord["changelog",
 		[HOPEFULLY]	FIXED WEAPON ADDONS DISAPPEAR<br/>
 		[HALF-FIXED] ADMIN PANEL (MOSTLY WORKS)<br/>
 		[SOURCE] UPDATED TO SOME NEW FIXES<br/>
-
+		<br/>		
+		CHANGES FOR V1.0898<br/>
+		[ADDED] FASTER NIGHT TIME by Tonic<br/>
+		[TWEAKED] FASTER NIGHT TIME SETTINGS<br/>
 		"
 ]
 ];
