@@ -53,26 +53,34 @@ publicVariable "currentInvites";
 currentStaticHelis = []; // Storage for the heli marker numbers so that we don't spawn wrecks on top of live helis
 
 //Civilian Vehicle List - Random Spawns
-civilianVehicles = ["c_offroad","B_Quadbike_F", "O_Quadbike_F"];
+civilianVehicles = ["c_offroad", "B_Quadbike_F", "O_Quadbike_F"];
 
 //Military Vehicle List - Random Spawns
-militaryVehicles = ["c_offroad","O_Ifrit_F","B_Hunter_F"];
+militaryVehicles = ["c_offroad", "O_Ifrit_F", "B_Hunter_F"];
 
 //Armed Military Vehicle List - Random Spawns
-armedMilitaryVehicles = ["B_Hunter_F","O_Ifrit_F"];
+armedMilitaryVehicles = ["B_Hunter_F", "O_Ifrit_F", "B_Hunter_RCWS_F", "B_Hunter_HMG_F", "O_Ifrit_GMG_F", "_Ifrit_MG_F"];
                             
 //Object List - Random Spawns.
-objectList = ["Land_Barrelwater_F",
-			"Land_Sacks_goods_F",
+objectList = ["Land_MetalBarrel_F",			
+			"Land_Cargo_House_V1_F",
+			"Land_Cargo_Patrol_V1_F",
+			"Land_Cargo_Patrol_V2_F",
+			"Land_Cargo_HQ_V1_F",
+			"Land_Cargo_House_V1_F",
+			"Land_Cargo_Patrol_V1_F",
+			"Land_Cargo_Patrol_V2_F",
 			"Land_HBarrierBig_F",
 			"Land_HBarrier_5_F",
-			"Land_HBarrier_1_F",
-			"Land_CanisterPlastic_F",
-			"Land_MetalBarrel_F",
-			"Land_HBarrierBig_F",
 			"Land_HBarrier_3_F",
-			"Land_HBarrierBig_F"];
-                                
+			"Land_HBarrierBig_F",
+			"Land_HBarrier_5_F",
+			"Land_HBarrier_3_F",
+			"Land_HBarrierBig_F",
+			"Land_HBarrier_5_F",
+			"Land_HBarrier_3_F"];
+
+			
 //Object List - Random Spawns.
 staticWeaponsList = ["B_MK6"];
 

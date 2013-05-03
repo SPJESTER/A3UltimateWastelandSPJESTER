@@ -1,11 +1,11 @@
-Ultimate Wasteland by SPJESTER V1.0898
+Ultimate Wasteland by SPJESTER V1.0899
 ==================================
 Based off of GoT Wasteland V1.08(D)
 
 All credits for Wasteland go to 404Games and their DEV's
 This is just my alteration.
 
-current status: V1.0898 (Complete Edition)
+current status: V1.0899 (Complete Edition)
 
 If you are not famillair with creating PBO files, grab the ready-to-go-PBO here: 
 https://github.com/JoSchaap/Arma3_Binary_PBO
@@ -184,7 +184,7 @@ CHANGES FOR V1.0897
 [HALF-FIXED] ADMIN PANEL (MOSTLY WORKS)
 [SOURCE] UPDATED TO SOME NEW FIXES
 	
-CHANGES FOR V1.0898
+CHANGES FOR V1.0899
 [ADDED] FASTER NIGHT TIME by Tonic
 [TWEAKED] FASTER NIGHT TIME SETTINGS
 [FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN

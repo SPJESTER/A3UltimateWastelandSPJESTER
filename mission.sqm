@@ -41,7 +41,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="Ultimate Wasteland V1.0898";
+		briefingName="Ultimate Wasteland V1.0899";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0.29999998;
@@ -53,7 +53,7 @@ class Mission
 		year=2035;
 		month=9;
 		day=25;
-		hour=12;
+		hour=6;
 		minute=0;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;

@@ -251,7 +251,7 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.0898(SPJESTER)",
+"1.0899(SPJESTER)",
 "
 <br/>
 		CHANGES FOR V1.089<br/>
@@ -301,6 +301,15 @@ player createDiaryRecord["changelog",
 		[ADDED] FASTER NIGHT TIME by Tonic<br/>
 		[TWEAKED] FASTER NIGHT TIME SETTINGS<br/>
 		[FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN<br/>
+		<br/>
+		CHANGES FOR V1.0899<br/>
+		[ADDED] MORE TOWING SUPPORT<br/>
+		[ADDED] MORE BARRIERS TO MOVE/SPAWN LIST<br/>		
+		[ADDED] SMALL BARRACKS TO MOVE/SPAWN LIST<br/>
+		[ADDED] DEFENCE TOWER TO MOVE/SPAWN LIST<br/>
+		[NEWS] BASE BUILDING IMPLEMENTED<br/>
+		[EDITED] UNARMED TRUCKS LOAD-IN CAPACITY<br/>
+		[REMOVED] RANDOM WATER AND SACKS<br/>
 		"
 ]
 ];
@@ -312,7 +321,6 @@ player createDiaryRecord["changelog",
 <br/>
 		CURRENT BUGLIST:<br/>
 		SOME OF ADMIN PANEL IS STILL BROKEN<br/>
-		[REMOVED] TIME ADMIN SCRIPT NOT SYNCING<br/>
 		[*LET ME KNOW IF FOUND MORE* -SPJESTER]<br/>
 		<br/>
 "

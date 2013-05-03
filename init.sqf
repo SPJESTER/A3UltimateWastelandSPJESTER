@@ -26,7 +26,7 @@ X_Server = false;
 X_Client = false;
 X_JIP = false;
 hitStateVar = false;
-versionName = "Ultimate Wasteland V1.0898";
+versionName = "Ultimate Wasteland V1.0899";
 
 if(isServer) then { X_Server = true;};
 if(!isDedicated) then { X_Client = true;};
@@ -132,4 +132,4 @@ setTerrainGrid 25;
 setviewdistance 2200;
 
 //FASTER TIME MOD
-[5,false,true,15] execFSM "core_time.fsm";
+[5,false,true] execFSM "core_time.fsm";

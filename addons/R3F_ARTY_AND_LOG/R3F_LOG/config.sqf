@@ -26,13 +26,20 @@ R3F_LOG_CFG_objets_remorquables = [
 	"B_Hunter_HMG_F",
 	"O_Ifrit_F",
 	"O_Ifrit_GMG_F",
-	"Land_Cargo20_Military_F",
 	"O_Ka60_Unarmed_F",
 	"B_MH9_F",
 	"O_Ka60_F",
 	"Land_Cargo20_military_F",
 	"Land_cargo_addon02_v2_F",
-	"B_AH9_F"
+	"B_AH9_F",
+	"B_SpeedBoat",
+	"B_Lifeboat",
+	"B_Assaultboat",
+	"O_Lifeboat",
+	"O_SpeedBoat",
+	"O_Assaultboat",
+	"B_Quadbike_F",
+	"O_Quadbike_F"	
 ];
 
 /****** LIFT WITH VEHICLE / HELIPORTER AVEC VEHICULE ******/
@@ -75,20 +82,20 @@ R3F_LOG_CFG_objets_heliportables = [
 
 R3F_LOG_CFG_transporteurs = [
 	["c_offroad", 30],
-	["O_Ifrit_MG_F", 20],
-	["B_Hunter_F", 20],
-	["B_Hunter_RCWS_F", 20],
-	["B_Hunter_HMG_F", 20],
-	["O_Ifrit_F", 20],
-	["O_Ifrit_GMG_F", 20],
+	["O_Ifrit_MG_F", 50],
+	["B_Hunter_F", 50],
+	["B_Hunter_RCWS_F", 50],
+	["B_Hunter_HMG_F", 50],
+	["O_Ifrit_F", 50],
+	["O_Ifrit_GMG_F", 50],
 	["O_Ka60_Unarmed_F", 45],
 	["B_MH9_F", 10],
 	["O_Ka60_F", 20],
-    	["O_Quadbike_F", 5],
-    	["B_Quadbike_F", 5],
-	["Land_Cargo20_military_F", 30],
-		["B_Assaultboat", 10],
-			["O_Assaultboat", 10],
+    ["O_Quadbike_F", 5],
+    ["B_Quadbike_F", 5],
+	["Land_Cargo20_military_F", 100],
+	["B_Assaultboat", 20],
+	["O_Assaultboat", 20],
 	["B_AH9_F", 10]
 ];
 
@@ -105,8 +112,6 @@ R3F_LOG_CFG_objets_transportables =  [
 	["Land_MetalBarrel_F", 2],
 	["Land_HBarrierBig_F", 5],
 	["Land_Mil_WallBig_4m_F",5],
-
-
 	["Land_HBarrier_3_F", 3],
     ["Land_HBarrier_5_F", 5],
     ["Land_HBarrier_1_F", 1],
@@ -117,11 +122,14 @@ R3F_LOG_CFG_objets_transportables =  [
 	["B_Lifeboat", 5],
 	["O_Mk6", 10],
 	["B_Mk6", 10],
+	["Land_Cargo_House_V1_F",20],
+	["Land_Cargo_HQ_V1_F ",50],	
+	["Land_Cargo_Patrol_V1_F",10],
+	["Land_Cargo_Patrol_V2_F",10],
 	["Land_Sack_F", 1]
 ];
 
 /****** MOVABLE-BY-PLAYER OBJECTS / OBJETS DEPLACABLES PAR LE JOUEUR ******/
-
 R3F_LOG_CFG_objets_deplacables = [
 	"Box_East_Support_F",
 	"Box_East_Wps_F",
@@ -133,17 +141,20 @@ R3F_LOG_CFG_objets_deplacables = [
 	"Land_Sacks_goods_F",
 	"Land_MetalBarrel_F",
 	"Land_HBarrierBig_F",
-
 	"Land_HBarrier_1_F",
 	"Land_HBarrier_3_F",
-    	"Land_HBarrier_5_F",
+    "Land_HBarrier_5_F",
 	"Land_Cargo20_military_F",
 	"Land_Mil_WallBig_4m_F",
-    	"O_Quadbike_F",
-    	"B_Quadbike_F",
+    "O_Quadbike_F",
+    "B_Quadbike_F",
 	"Land_ToiletBox_F",
-		"O_Lifeboat",
-			"B_Lifeboat",
-			"Land_Sack_F"
-
-];
+	"O_Lifeboat",
+	"B_Lifeboat",
+	"Land_Sack_F",
+	"O_Assaultboat",
+	"B_Assaultboat",
+	"Land_Cargo_House_V1_F",
+	"Land_Cargo_HQ_V1_F",	
+	"Land_Cargo_Patrol_V1_F",
+	"Land_Cargo_Patrol_V2_F"];
