@@ -187,6 +187,7 @@ CHANGES FOR V1.0897
 CHANGES FOR V1.0898
 [ADDED] FASTER NIGHT TIME by Tonic
 [TWEAKED] FASTER NIGHT TIME SETTINGS
+[FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN
 
 		
 Please be reminded that i did NOT create this mission from scratch, most of the work has been done by the awesome DEV-team @ 404Games. Im just the huy that had some spare time to make it work in ArmA3Alpha :)

@@ -300,6 +300,7 @@ player createDiaryRecord["changelog",
 		CHANGES FOR V1.0898<br/>
 		[ADDED] FASTER NIGHT TIME by Tonic<br/>
 		[TWEAKED] FASTER NIGHT TIME SETTINGS<br/>
+		[FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN<br/>
 		"
 ]
 ];
