@@ -99,7 +99,6 @@ R3F_LOG_CFG_transporteurs = [
 	["B_AH9_F", 10]
 ];
 
- 
 R3F_LOG_CFG_objets_transportables =  [
 	["Box_East_Support_F", 5],
 	["Box_East_Wps_F", 5],
@@ -122,10 +121,10 @@ R3F_LOG_CFG_objets_transportables =  [
 	["B_Lifeboat", 5],
 	["O_Mk6", 10],
 	["B_Mk6", 10],
-	["Land_Cargo_House_V1_F",20],
-	["Land_Cargo_HQ_V1_F ",50],	
-	["Land_Cargo_Patrol_V1_F",10],
-	["Land_Cargo_Patrol_V2_F",10],
+	["Land_Cargo_House_V1_F", 20],
+	["Land_Cargo_HQ_V1_F", 50],	
+	["Land_Cargo_Patrol_V1_F", 10],
+	["Land_Cargo_Patrol_V2_F", 10],
 	["Land_Sack_F", 1]
 ];
 
