@@ -16,7 +16,7 @@ class PlayersMenu
 	enableSimulation = true;
 
 	class controlsBackground {
-		
+
 		class MainBackground: w_RscPicture
 		{
 			idc = -1;
@@ -104,7 +104,7 @@ class PlayersMenu
 			h = 0.04 * safezoneH;
 		};
 	};
-	
+
 	class controls {
 
 		class PlayerEditBox:w_RscEdit
@@ -140,7 +140,7 @@ class PlayersMenu
 		class SlayButton: w_RscButton
 		{
 			idc = -1;
-			text = "Slay";
+			text = "Mission Restart";
 			onButtonClick = "[2] execVM 'client\systems\adminPanel\playerSelect.sqf'";
 			x = 0.2 * safezoneW + safezoneX;
 			y = 0.760 * safezoneH + safezoneY;
@@ -211,7 +211,7 @@ class PlayersMenu
 		class WarnButton: w_RscButton
 		{
 			idc = -1;
-			text = "Warn";
+			text = "Announce";
 			onButtonClick = "[1] execVM 'client\systems\adminPanel\playerSelect.sqf'";
 			x = 0.535 * safezoneW + safezoneX;
 			y = 0.750 * safezoneH + safezoneY;
@@ -220,5 +220,3 @@ class PlayersMenu
 		};
 	};
 };
-
-

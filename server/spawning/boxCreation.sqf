@@ -207,7 +207,7 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["30Rnd_762x39_AK47",50];
         _currBox addMagazineCargoGlobal ["6Rnd_45ACP",24];
         _currBox addMagazineCargoGlobal ["HandGrenade",5];
-        _currBox addMagazineCargoGlobal ["20Rnd_762x51_FNFAL",35];
+        _currBox addMagazineCargoGlobal ["20Rnd_762x45_FNFAL",35];
         _currBox addMagazineCargoGlobal ["10x_303",50];
         _currBox addMagazineCargoGlobal ["10Rnd_9x39_SP5_VSS",10];
 		_currbox addmagazineCargoGlobal ["SmokeShell", 3];
@@ -237,15 +237,15 @@ switch(_selectedBox) do {
         _currBox addMagazineCargoGlobal ["5Rnd_86x70_L115A1",8];
         _currBox addMagazineCargoGlobal ["15Rnd_9x19_M9",24];
 		_currBox addMagazineCargoGlobal ["15Rnd_9x19_M9SD",20];
-        _currBox addMagazineCargoGlobal ["100Rnd_762x51_M240",8];
+        _currBox addMagazineCargoGlobal ["100Rnd_762x45_M240",8];
         _currBox addMagazineCargoGlobal ["1Rnd_HE_M203",4];
         _currBox addMagazineCargoGlobal ["1Rnd_Smoke_M203",5];
         _currBox addMagazineCargoGlobal ["6Rnd_45ACP",5];
         _currBox addMagazineCargoGlobal ["HandGrenade",4];
 		_currBox addMagazineCargoGlobal ["200Rnd_556x45_L110A1",8];
         _currBox addMagazineCargoGlobal ["5Rnd_86x70_L115A1",5];
-        _currBox addMagazineCargoGlobal ["20Rnd_762x51_DMR",10];
-        _currBox addMagazineCargoGlobal ["20Rnd_762x51_FNFAL",15];
+        _currBox addMagazineCargoGlobal ["20Rnd_762x45_DMR",10];
+        _currBox addMagazineCargoGlobal ["20Rnd_762x45_FNFAL",15];
 		_currBox addMagazineCargoGlobal ["10Rnd_762x54_SVD",8]; 
 		_currbox addmagazineCargoGlobal ["SmokeShell", 3];		
     };

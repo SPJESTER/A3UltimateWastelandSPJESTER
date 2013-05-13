@@ -24,62 +24,82 @@ _player selectWeapon "hgun_P07_F";
 
 if(str(playerSide) in ["WEST"]) then
 {
-   	_player unassignItem "NVGoggles"; 
-	_player removeItem "NVGoggles";
 	removeAllWeapons _player;
     _player addBackpack "B_AssaultPack_Base";
-	_player addMagazine "16Rnd_9x21_Mag";
-	_player addMagazine "16Rnd_9x21_Mag";
 	_player addWeapon "hgun_P07_F";
-	_player addMagazine "30Rnd_65x39_caseless_mag";
-	_player addMagazine "30Rnd_65x39_caseless_mag"; 
-	_player addWeapon "arifle_MXC_ACO_point_F";
-	_player selectWeapon "hgun_P07_F";
+	_player addMagazine "16Rnd_9x21_Mag";
+	_player addMagazine "16Rnd_9x21_Mag";
+	_wep = "arifle_MXC_ACO_point_F";
+	_mags = getArray (configfile >> 'cfgWeapons' >> _wep >> 'magazines');
+	_mag = _mags select 0;
+	_player addMagazine _mag;
+	_player addMagazine _mag;
+	_player addWeapon _wep;
+	_player selectWeapon _wep;
+	reload _player;
 	_player addItem "NVGoggles";
+	_player assignItem "NVGoggles";
 	_player addItem "ItemGPS";
 	_player addItem "acc_flashlight";
 	_player addWeapon "Binocular";	
+	reload _player;
+	_player SetUnitPos "Up";
+	_player action ["WEAPONINHAND",_player];
 };
 
 if(str(playerSide) in ["EAST"]) then
 {
-    _player unassignItem "NVGoggles"; 
-	_player removeItem "NVGoggles";
 	removeAllWeapons _player;
-    _player addBackpack "B_AssaultPack_Base";
-	_player addMagazine "16Rnd_9x21_Mag";
-	_player addMagazine "16Rnd_9x21_Mag";
+	_player addBackpack "B_AssaultPack_Base";
 	_player addWeapon "hgun_Rook40_F";
-	_player addMagazine "30Rnd_65x39_caseless_green";
-	_player addMagazine "30Rnd_65x39_caseless_green"; 
-	_player addWeapon "arifle_Khaybar_ACO_point_F";
-	_player selectWeapon "hgun_Rook40_F";
+	_player addMagazine "16Rnd_9x21_Mag";
+	_player addMagazine "16Rnd_9x21_Mag";
+	reload _player;
+	_wep = "arifle_Khaybar_ACO_point_F";
+	_mags = getArray (configfile >> 'cfgWeapons' >> _wep >> 'magazines');
+	_mag = _mags select 0;
+	_player addMagazine _mag;
+	_player addMagazine _mag;
+	_player addWeapon _wep;
+	_player selectWeapon _wep;
+	reload _player;
 	_player addItem "NVGoggles";
+	_player assignItem "NVGoggles";
 	_player addItem "ItemGPS";
 	_player addItem "acc_flashlight";
 	_player addWeapon "Binocular";	
+	reload _player;
+	_player SetUnitPos "Up";
+	_player action ["WEAPONINHAND",_player];
 };
 
 if(str(playerSide) in ["GUER"]) then
 {
-    _player unassignItem "NVGoggles"; 
-	_player removeItem "NVGoggles"; 
 	removeAllWeapons _player;
 	removeUniform _player;
 	_uniform = ["U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Commoner1_3","U_C_Commoner1_2"] call BIS_fnc_selectRandom;
 	_player addUniform _uniform;
     _player addBackpack "B_AssaultPack_Base";
-	_player addMagazine "16Rnd_9x21_Mag";
-	_player addMagazine "16Rnd_9x21_Mag";
 	_player addWeapon "hgun_P07_F";
-	_player addMagazine "30Rnd_65x39_case_mag";
-	_player addMagazine "30Rnd_65x39_case_mag"; 
-	_player addWeapon "arifle_TRG20_ACO_F";
-	_player selectWeapon "hgun_P07_F";
+	_player addMagazine "16Rnd_9x21_Mag";
+	_player addMagazine "16Rnd_9x21_Mag";
+	reload _player;
+	_wep = "arifle_TRG20_ACO_F";
+	_mags = getArray (configfile >> 'cfgWeapons' >> _wep >> 'magazines');
+	_mag = _mags select 0;
+	_player addMagazine _mag;
+	_player addMagazine _mag;
+	_player addWeapon _wep;
+	_player selectWeapon _wep;
+	reload _player;
 	_player addItem "NVGoggles";
+	_player assignItem "NVGoggles";
 	_player addItem "ItemGPS";
 	_player addItem "acc_flashlight";
-	_player addWeapon "Binocular";	
+	_player addWeapon "Binocular";
+	reload _player;
+	_player SetUnitPos "Up";
+	_player action ["WEAPONINHAND",_player];
 };
 
 _player addrating 1000000;
@@ -96,8 +116,6 @@ _player setVariable["camonet",0,false];
 
 [] execVM "client\functions\playerActions.sqf";
 
-_player groupChat format["Server Initialization Complete"];
+//_player groupChat format["Server Initialization Complete"];
+_player groupChat format["Server Initialization Complete / If you like the server, and would like to help keep it up	, Visit http://Obliviousgaming.com"];
 playerSetupComplete = true;
-
-
-

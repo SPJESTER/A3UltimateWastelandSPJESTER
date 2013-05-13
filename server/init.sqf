@@ -30,20 +30,20 @@ if (serverSpawning == 1) then {
 	_vehSpawn = [] ExecVM "server\functions\vehicleSpawning.sqf";
 	waitUntil{sleep 0.1; scriptDone _vehSpawn};
     _objSpawn = [] ExecVM "server\functions\objectsSpawning.sqf";
-	waitUntil{sleep 0.1; scriptDone _objSpawn};
+	waitUntil{sleep 0.2; scriptDone _objSpawn};
     _objSpawn2 = [] ExecVM "server\functions\objectsSpawning2.sqf";
-	waitUntil{sleep 0.1; scriptDone _objSpawn2};
+	waitUntil{sleep 0.3; scriptDone _objSpawn2};
     _boxSpawn = [] ExecVM "server\functions\boxSpawning.sqf";
-	waitUntil{sleep 0.1; scriptDone _boxSpawn};
+	waitUntil{sleep 0.4; scriptDone _boxSpawn};
     _heliSpawn = [] ExecVM "server\functions\staticHeliSpawning.sqf";
-    waitUntil{sleep 0.1; scriptDone _heliSpawn};
+    waitUntil{sleep 0.5; scriptDone _heliSpawn};
 };
 #endif
 //Execute Server Missions.
 if (sideMissions == 1) then {
 	diag_log format["WASTELAND SERVER - Initilizing Missions"];
     [] execVM "server\missions\sideMissionController.sqf";
-    sleep 5;
+    sleep 10;
     [] execVM "server\missions\mainMissionController.sqf";
 };
 

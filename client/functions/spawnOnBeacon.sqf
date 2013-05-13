@@ -40,7 +40,7 @@ switch(_switch) do
 		}forEach pvar_beaconListRed;
         
         2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];
-        player setPos [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
+        player setPosATL [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
         [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";    
         respawnDialogActive = false;
 		closeDialog 0;
@@ -62,7 +62,7 @@ switch(_switch) do
 		}forEach pvar_beaconListRed;
 		
         2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];   
-		player setPos [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
+		player setPosATL [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
         [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";   
         respawnDialogActive = false;
 		closeDialog 0;
@@ -83,7 +83,7 @@ switch(_switch) do
 		}forEach pvar_beaconListRed;
 		    
         2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];
-		player setPos [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
+		player setPosATL [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
         [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";   
         respawnDialogActive = false;
 		closeDialog 0;
@@ -104,13 +104,13 @@ switch(_switch) do
 		}forEach pvar_beaconListRed;
 		
         2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];
-		player setPos [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO  
+		player setPosATL [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO  
         [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";   
         respawnDialogActive = false;
 		closeDialog 0;
     };
     case 4:{ // Button 4
-		player setPos _respawnPosition;		{
+		player setPosATL _respawnPosition;		{
 			if(ctrlText _buttonFour == _x select 0) then {
 				_respawnPosition = _x select 1;
 		        _respawnPosition = [_respawnPosition,1,75,1,0,0,0] call BIS_fnc_findSafePos;
@@ -125,7 +125,7 @@ switch(_switch) do
 		}forEach pvar_beaconListRed;
 		    
         2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];
-		player setPos [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
+		player setPosATL [_respawnPosition select 0, _respawnPosition select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO 
         [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";   
         respawnDialogActive = false;
 		closeDialog 0;

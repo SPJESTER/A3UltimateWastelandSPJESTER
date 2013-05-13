@@ -7,6 +7,7 @@
 private ["_side"];
 
 playerSpawning = true;
+
 playerUID = getPlayerUID(player);
 townSearch = 0;
 beaconSearch = 0;
@@ -66,5 +67,15 @@ while {respawnDialogActive} do {
 	titleText ["", "BLACK OUT", 0.00001];
 };
 sleep 0.1;
+_wep = primaryWeapon player;
+player selectWeapon _wep;
+player action ["WEAPONINHAND",player];
 titleText ["", "BLACK IN", 0.00001];
 playerSpawning = false;
+while {!playerSpawning} do
+{
+	execVM "spawnprotection.sqf";
+	sleep sleep 10;
+	execVM "spawnprotection.sqf";
+	waitUntil {playerSpawning};
+};

@@ -22,7 +22,6 @@ _additionOne = _additionArray select (random (count _additionArray -1));
 _additionArray = _additionArray - [_additionOne];
 _additionTwo = _additionArray select (random (count _additionArray -1));
 _additionArray = _additionArray - [_additionTwo];
-_additionThree = vehicleAddition2 select (random (count vehicleAddition2 -1));
 
 //Add guns and magazines, note the Global at the end..
 _car addMagazineCargoGlobal [_mag,1];

@@ -1,23 +1,26 @@
-hint format ["Clear Server"];
-cutText [format ["Clear Server"], "PLAIN DOWN"];
-
+while {true} do 
 {
-	if ((count(crew _x) == 0) and ((damage _x > 0.55) or !(canMove _x))) then 
 	{
-		if !((_x isKindOf "Air") or (_x isKindOf "Tank")) then 
+		if ((count(crew _x) == 0) and ((damage _x > 0.9) or !(canMove _x))) then 
 		{
 			deleteVehicle vehicle _x;
 			deleteVehicle _x;
 			deleteVehicle vehicle _x;
 			deleteVehicle _x;
 		};
-	};
-} forEach vehicles;
+	} forEach vehicles;
 
-
-{
-	deleteVehicle vehicle _x;
-	deleteVehicle _x;
-} forEach (allMissionObjects "EvMoney")+allDEAD;
-
-if (vehicle player in allDEAD) then {deleteVehicle vehicle player;};
+	
+	{
+		deleteVehicle vehicle _x;
+		deleteVehicle _x;
+	} forEach allMissionObjects "B_AssaultPack_Base";
+	
+	{
+		deleteVehicle vehicle _x;
+		deleteVehicle _x;
+	} forEach allMissionObjects "Land_Sack_F";
+	sleep 6000;
+	ExecVM "server\functions\vehicleSpawning.sqf";
+	sleep 30;
+};

@@ -17,18 +17,18 @@ if (R3F_LOG_mutex_local_verrou) then
 else
 {
 	R3F_LOG_mutex_local_verrou = true;
-	
+
 	private ["_heliporteur", "_objet"];
-	
+
 	_heliporteur = _this select 0;
 	_objet = nearestObjects [_heliporteur, R3F_LOG_CFG_objets_heliportables, 20];
 	// Parce que l'héliporteur peut être un objet héliportable
 	_objet = _objet - [_heliporteur];
-	
+
 	if (count _objet > 0) then
 	{
 		_objet = _objet select 0;
-		
+
 		if !(_objet getVariable "R3F_LOG_disabled") then
 		{
 			if (isNull (_objet getVariable "R3F_LOG_est_transporte_par")) then
@@ -49,22 +49,43 @@ else
 								_ne_remorque_pas = false;
 							};
 						};
-						
+
 						if (_ne_remorque_pas) then
 						{
-							// On mémorise sur le réseau que l'héliporteur remorque quelque chose
-							_heliporteur setVariable ["R3F_LOG_heliporte", _objet, true];
-							// On mémorise aussi sur le réseau que l'objet est attaché à un véhicule
-							_objet setVariable ["R3F_LOG_est_transporte_par", _heliporteur, true];
+							if ((_objet isKindOf "Land_Cargo_HQ_V1_F") or (_objet isKindOf "Land_Cargo_House_V1_F")) then
+							{
+								// On mémorise sur le réseau que l'héliporteur remorque quelque chose
+								_heliporteur setVariable ["R3F_LOG_heliporte", _objet, true];
+								// On mémorise aussi sur le réseau que l'objet est attaché à un véhicule //Land_Cargo_HQ_V1_F
+								_objet setVariable ["R3F_LOG_est_transporte_par", _heliporteur, true];
+
+								// Attacher sous l'héliporteur au ras du sol
+								_objet attachTo [_heliporteur, [
+									0,
+									0,
+									(boundingBox _heliporteur select 0 select 2) - (boundingBox _objet select 0 select 2) - (getPos _heliporteur select 2) - 6.5
+								]];
+
+								player globalChat format [STR_R3F_LOG_action_heliporter_fait, getText (configFile >> "CfgVehicles" >> (typeOf _objet) >> "displayName")];
+							}
+							else
+							{
+								// On mémorise sur le réseau que l'héliporteur remorque quelque chose
+								_heliporteur setVariable ["R3F_LOG_heliporte", _objet, true];
+								// On mémorise aussi sur le réseau que l'objet est attaché à un véhicule //Land_Cargo_HQ_V1_F
+								_objet setVariable ["R3F_LOG_est_transporte_par", _heliporteur, true];
+
+								// Attacher sous l'héliporteur au ras du sol	
+								_objet attachTo [_heliporteur, [
+									0,
+									0,
+									(boundingBox _heliporteur select 0 select 2) - (boundingBox _objet select 0 select 2) - (getPos _heliporteur select 2) +0.5
+								]];
 							
-							// Attacher sous l'héliporteur au ras du sol
-							_objet attachTo [_heliporteur, [
-								0,
-								0,
-								(boundingBox _heliporteur select 0 select 2) - (boundingBox _objet select 0 select 2) - (getPos _heliporteur select 2) + 0.5
-							]];
-							
+
 							player globalChat format [STR_R3F_LOG_action_heliporter_fait, getText (configFile >> "CfgVehicles" >> (typeOf _objet) >> "displayName")];
+							};
+							
 						}
 						else
 						{
@@ -87,6 +108,6 @@ else
 			};
 		};
 	};
-	
+
 	R3F_LOG_mutex_local_verrou = false;
 };

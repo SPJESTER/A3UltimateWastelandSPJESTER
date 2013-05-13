@@ -35,7 +35,7 @@ switch(_switch) do
 				_rad = _x select 1;
 				_pos = [_pos,5,_rad,1,0,0,0] call BIS_fnc_findSafePos;
 				_pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];				
-				player setPos _pos;
+				player setPosATL _pos;
 				respawnDialogActive = false;
 				closeDialog 0;
 			};
@@ -52,7 +52,7 @@ switch(_switch) do
 				_rad = _x select 1;
 				_pos = [_pos,5,_rad,1,0,0,0] call BIS_fnc_findSafePos;
 				_pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];			
-				player setPos _pos;
+				player setPosATL _pos;
 				respawnDialogActive = false;
 				closeDialog 0;
 			};
@@ -69,7 +69,7 @@ switch(_switch) do
 				_rad = _x select 1;
 				_pos = [_pos,5,_rad,1,0,0,0] call BIS_fnc_findSafePos;
 				_pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];			
-				player setPos _pos;
+				player setPosATL _pos;
 				respawnDialogActive = false;
 				closeDialog 0;
 			};
@@ -86,7 +86,7 @@ switch(_switch) do
 				_rad = _x select 1;
 				_pos = [_pos,5,_rad,1,0,0,0] call BIS_fnc_findSafePos;
 				_pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];			
-				player setPos _pos;
+				player setPosATL _pos;
 				respawnDialogActive = false;
 				closeDialog 0;
 			};
@@ -103,7 +103,7 @@ switch(_switch) do
 				_rad = _x select 1;
 				_pos = [_pos,5,_rad,1,0,0,0] call BIS_fnc_findSafePos;
 				_pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];			
-				player setPos _pos;
+				player setPosATL _pos;
 				respawnDialogActive = false;
 				closeDialog 0;
 			};

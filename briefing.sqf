@@ -1,92 +1,12 @@
 waitUntil {!isNull player && isPlayer player};
 
-player createDiarySubject ["404games", "404 Info"];
+player createDiarySubject ["ultimate_wasteland", "Credits"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["serverinfo", "Server Info"];
 
 player createDiaryRecord["changelog",
 [
-"1.01(404)",
-"
-<br/>
-		[Fixed] - Gun Stores<br/>
-		[Fixed] - Missions<br/>
-		[Fixed] - General UI<br/>
-		[Fixed] - Lots of other fixes<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.02(404)",
-"
-<br/>
-		[Fixed] - Respawning Vehicles<br/>
-		[Fixed] - Deserted Vehicles (20Mins)<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.03(404)",
-"
-<br/>
-		[Added] - Light Armed Vehicle Mission (All armed cars).<br/>
-		[Removed] - All armed cars from initial spawn for balance.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.05(404)",
-"
-<br/>
-		[Added] Uniforms,Hats and Vests to the gunstore.<br/>
-		[Added] Players now spawn with a backpack.<br/>
-		[Fixed] Not able to get weapons out of vehicle.<br/>
-		[Fixed] R3F Loading into vehicles.<br/>
-		[Fixed] Gunstore locations so they can't be ran down by vehicles.<br/>
-		[Fixed] Health Icon.<br/>
-		[Fixed] Static helicopter spawning and no more explosions.<br/>
-		[Fixed] Weapon crates can now be loaded into vehicles.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.06(404)",
-"
-<br/>
-		[Fixed] Fix to make Ammo boxes moveable.(thanks to meat147).<br/>
-		[Fixed] missing disabled color for money input error.(thanks to Sanjo).<br/>
-		[Fixed] NV Goggles in cars and boxes.(thanks to Sanjo).<br/>
-		
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.07(GoT)",
-"
-<br/>
-		[Fixed] Fixed the Sound Counter error on first spawn.<br/>
-		[Fixed] Re-Added the LightArmed-Vehicle mission.<br/>
-		[Fixed] Fixed the description issue for the LightArmed-Vehicle mission.<br/>
-		[Removed] Scaffolding and other useless objectspawns to improve ability to build bases.<br/>
-		[Changed] Starting money to 200.<br/>
-		[Changed] Added our own strings and some other changes.<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.08d(GoT)",
+"GoT Wasteland",
 "
 <br/>
 		*Revision:a*<br/>
@@ -143,9 +63,207 @@ player createDiaryRecord["changelog",
 
 player createDiaryRecord["changelog",
 [
-"1.086(SPJESTER)",
+"BushWookie",
 "
 <br/>
+		CHANGES FOR V1.098<br/>
+		[REMOVED] Clear server from scroll menu<br/>
+		[ADDED] Clear server to server side scripts<br/>
+		[ADDED] New Time until mission display<br/>
+		[TWEAKED] AntiHack script<br/>
+		[ADDED] Temp Fix for random vehicls not respawning<br/>
+		[REMOVED] Proving Grounds Admin Menu<br/>
+		[FIXED] Admin Menu<br/>
+		[REMOVED] Usless files and uneeded files<br/>
+		<br/>
+		CHANGES FOR V1.097<br/>
+		[TWEAKED] Car Spawning Some more<br/>
+		[TWEAKED] Anti-Hack Global Announcment<br/>
+		<br/>
+		CHANGES FOR V1.096<br/>
+		[TWEAKED] AntiHack script<br/>
+		[TWEAKED] R3F Logistics<br/>
+		[FIXED] Script Scan<br/>
+		[FIXED] Buildings Liftable By Heli's<br/>
+		[TWEAKED] Player Setup Location<br/>
+		[ADDED] Color Corection<br/>
+		[ADDED] Player Respawn Protection<br/>			
+		<br/>
+		CHANGES FOR V1.095<br/>
+		[FIXED] Random Vehicle Respawn<br/>
+		[TWEAKED] AntiHack script<br/>
+		[FIXED] Admin menu<br/>
+		[FIXED] Punish\Forgive<br/>
+		[FIXED] Ulimted Missile Strikes for one puchase<br/>
+		[TWEAKED] AntiHack script some more<br/>
+		[FIXED] Admin Menu Again<br/>
+		[FIXED] Proving Grounds aka Samatra's admin menu that 404Games stole<br/>
+		[TWEAKED] Admin Player Menu<br/>
+		[ADDED] bis_fnc_log<br/>
+		[ADDED] Complete rewrite of the briefing.sqf<br/>
+		[TWEAKED] AntiHack script a little more<br/>
+		<br/>
+		CHANGES FOR V1.094<br/>
+		[TWEAKED] Recoil<br/>
+		[TWEAKED] AntiHack script<br/>
+		[ADDED] Hidden Missile Strike for $10000<br/>
+		<br/>	
+		CHANGES FOR V1.093<br/>
+		[TWEAKED] Vehicle Cleanup Script<br/>
+		[TWEAKED] Debug Monitor<br/>
+		[TWEAKED] Spawn Load Out<br/>
+		[FIXED] AntiHack script<br/>
+		[FIXED] Night Vision and Primary Weapon<br/>
+		<br/>			
+"
+]
+];
+
+player createDiaryRecord["changelog",
+[
+"SPJESTER",
+"
+<br/>
+		CHANGES FOR V1.097<br/>
+		[TWEAKED] Car Spawning<br/>
+		[ADDED] More Random Vehicle Spawns<br/>
+		[REMOVED] Color Correction<br/>
+		[ADDED] Pipes to the spawn list<br/>	
+		[ADDED] Carrier Containers to spawn list<br/>
+		[ADDED] RSLO To Admin Panel<br/>
+		<br/>
+		CHANGES FOR V1.096<br/>
+		[TWEAKED] R3F Logistics<br/>
+		[ADDED] More Buildings to R3F Logistics<br/>
+		[ADDED] Some Buildings Liftable By Heli's<br/>
+		[FIXED] Buildings/Barriers not moving<br/>	
+		<br/>
+		CHANGES FOR V1.092<br/>
+		[TWEAKED] ANTI-HACK SCRIPT<br/>
+		[TWEAKED] SCRIPT RUN METHOD<br/>	
+		[TWEAKED] ANTI-HACK SECURITY<br/>	
+		[REMOVED] OLD BIS HACKER FIX<br/>
+		<br/>
+		CHANGES FOR V1.091<br/>
+		[TWEAKED] NIGHT TIME TO SKIP BY 15MINS EVERY 1MIN<br/>
+		[TWEAKED] DAY TIME TO SKIP BY 5MINS EVERY 1MIN<br/>	
+		[TWEAKED] START TIME TO 5:45AM FOR FULL DAY<br/>
+		<br/>
+		CHANGES FOR V1.0899<br/>
+		[ADDED] MORE TOWING SUPPORT<br/>
+		[ADDED] MORE BARRIERS TO MOVE/SPAWN LIST<br/>		
+		[ADDED] SMALL BARRACKS TO MOVE/SPAWN LIST<br/>
+		[ADDED] DEFENCE TOWER TO MOVE/SPAWN LIST<br/>
+		[NEWS] BASE BUILDING IMPLEMENTED<br/>
+		[EDITED] UNARMED TRUCKS LOAD-IN CAPACITY<br/>
+		[REMOVED] RANDOM WATER AND SACKS<br/>
+		<br/>
+		CHANGES FOR V1.0898<br/>
+		[ADDED] FASTER NIGHT TIME by Tonic<br/>
+		[TWEAKED] FASTER NIGHT TIME SETTINGS<br/>
+		[FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN<br/>
+		<br/>
+		CHANGES FOR V1.0897<br/>
+		[FIXED] BACKPACKS IN GUNSTORE<br/>
+		[TWEAKED] A FEW MORE SCRIPTS<br/>
+		[TWEAKED] ANTI-HACK AGAIN<br/>
+		[TWEAKED] RANDOM VEHICLE SPAWNER<br/>
+		[CLEANED] UP SOME CODE<br/>
+		[MODDED]MAX PLAYER SUPPORT 106 PLAYERS<br/>
+		[HOPEFULLY]	FIXED WEAPON ADDONS DISAPPEAR<br/>
+		[HALF-FIXED] ADMIN PANEL (MOSTLY WORKS)<br/>
+		[SOURCE] UPDATED TO SOME NEW FIXES<br/>
+		<br/>
+		CHANGES FOR V1.0896<br/>
+		[ADDED] BACKPACKS AND DIVER GOGGLES TO GUNSTORE<br/>
+		[ADDED] HD PATCH SCRIPT (Fussion)<br/>
+		[TWEAKED] WEAPON LOADOUT ITEMS<br/>
+		[CONVERTED] OLDER SCRIPTS TO NEW CODE<br/>
+		<br/>
+		CHANGES FOR V1.0895<br/>
+		[TWEAKED] FEW THINGS IN CODE<br/>
+		[FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
+		<br/>
+		CHANGES FOR V1.0894<br/>
+		[REMOVED] Food and Water System<br/>
+		[REMOVED] Food and Water items for FPS<br/>
+		<br/>
+		CHANGES FOR V1.0892<br/>
+		[ADDED] WEATHER AND TIME CHANGE TO ADMIN PANEL<br/>
+		[FIXED] LOCAL MISSIONS NOT APPEARING<br/>
+		[TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
+		[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
+        <br/>
+		CHANGES FOR V1.089<br/>
+		[ADDED] BIS CLEAR/RECOMPILE FUNCTION<br/>
+		[ADDED] IMPROVED ANTI-HACK SYSTEM<br/>	
+		[MOVED] MOST SCRIPTS TO BEGINNING TO LOAD FASTER<br/>
+		[FIXED] WEATHER/FOG TAKING A FEW TO START<br/>
+		[TWEAKED] THE FOG TO BE A LITTLE LESS AGRESSIVE<br/>
+		[TWEAKED] SOME ANTI-HACK SETTINGS<br/>
+		[TWEAKED] DEFAULT VIEWDISTANCE<br/>
+		[CHANGED] SOME OBSOLETE CODE PREPING FOR UPDATE<br/>	
+		[CHANGED] LABELING, THIS IS NOW THE FULL RELEASE<br/>
+		[CHANGED] START TIME TO 12AM<br/>
+		<br/>
+		CHANGES FOR V1.088<br/>
+		[ADDED] GPS to BluFor and Opfor<br/>
+		[ADDED] TAW VIEW DISTANCE MOD<br/>
+		[FIXED] FOOD LEVELS<br/>		
+		[FIXED] SCRIPT MENU IN WAY ALL THE TIME<br/>
+		[FIXED] SCRIPT MENU ON TOP OF ALL<br/>
+		[ATTEMPT-FIX] BIS HACKER MESSAGE<br/>		
+		[CHANGED] WEAPON LAYOUTS<br/>
+		[CHANGED] RESPAWN TIMER TO 10SEC<br/>		
+		<br/>
+		CHANGES FOR V1.087<br/>
+		[FIXED] BOATS BEING BEACHED ON SHORELINE/ROCK<br/>
+		[FIXED] SOME TEAMS SPAWNING AND BEING STUCK<br/>
+		[EDITED] FOOD AND WATER LEVELS TO 200 LIKE MONEY<br/>
+		[TWEAKED] START TIME TO 9AM FOR A NORMAL DAY<br/>
+		[TWEAKED] OVERCAST TO BE LOWER.<br/>
+		[ADDED] NV GOGGLES ON SPAWN INVENTORY FOR ALL<br/>
+		[ADDED] BINOCULARS ON SPAWN FOR ALL<br/>
+		<br/>
+		CHANGES FOR V1.0869<br/>
+		[ADDED] SDAR FOR ALL CLASSES ON SPAWN<br/>
+		<br/>
+		CHANGES FOR V1.0868<br/>
+		[FIXED] ALL REPAIR POINTS NOW CAN ABORT<br/>
+		[CLEANED] ALL REPAIR POINTS RE-ENTERED IN ORDER<br/>		
+		[MOVED] SOME REPAIR POINTS AT RUNWAY<br/>				
+		[REMOVED] BOAT REPAIR AREAS (HANDLING IS STUPID)<br/>		
+		<br/>
+		CHANGES FOR V1.0867<br/>
+		[FIXED] A FEW VEHICLE SPAWNS<br/>
+		[FIXED] RANGE ON REPAIR ZONES<br/>			
+		[LOWERED] RANGE ON VEHICLE REPAIR<br/>			
+		[FIXED] REPAIR ZONES NOT HAVING A HELI PAD<br/>			
+		[MOVED] HELI PADS TO ENDS OF RUNWAY<br/>
+		[REMOVED] ADMIN STUFF FROM SERVER FILE<br/>				
+		<br/>
+		CHANGES FOR V1.0866<br/>
+		[ADDED] Dynamic Random Weather<br/>
+		[ADDED] Auto Vehicle Respawner<br/>
+		[ADDED] Generic Vehicle Service<br/>
+		[ADDED] Generic Vehicle Service ZONES (On Map)<br/>
+		[ADDED] A Few more Vehicles in Useful locations<br/>
+		[FIXED] How many Medkits and Toolkits Spawn<br/>
+		[FIXED] Vehicle Zone Repair and Zone size<br/>
+		[FIXED] Renamed Things in Briefing Menu<br/>
+		[EDITED] Teams Seperated While spawning On the Island<br/>
+		[ROTATED] Most vehicles to face the right direction<br/>
+		[UPDATED] SOURCE FILES TO GoT's 1.08d/ See Changelog<br/>
+		[ADDED] Heli Pad Spawns for Choppers (Repair Points Also)<br/>
+		[REVERTED] Weather Rotates Every Half Hour<br/>			
+		<br/>
+		CHANGES FOR V1.0862<br/>
+		[REMOVED] Vehicle Speedup Hack (Caused problems)<br/>
+		[ADDED] Gun StoreLayout Save/Load Support<br/>
+		[ADDED] More Scope's and useful Items in Script<br/>		
+		[EDITED] Renamed Script Menu to Script Menu<br/>
+		[FIXED] Weather Rotates Hourly<br/>				
+		<br/>
 		[Added] More Vehicle Spawns.<br/>
 		[Added] Weapon Loadout Save Menu.<br/>
 		[Added] Custom Server Script Menu.<br/>
@@ -168,162 +286,7 @@ player createDiaryRecord["changelog",
 		[FIXED] NVGoggles as Item at GunStores<br/>
 		[FIXED] Weather, and for it to be Sunny<br/>
 		<br/>
-		<br/>
-		CHANGES FOR V1.0862<br/>
-		[REMOVED] Vehicle Speedup Hack (Caused problems)<br/>
-		[ADDED] Gun Store Layout Save/Load Support<br/>
-		[ADDED] More Scope's and useful Items in Script<br/>		
-		[EDITED] Renamed Script Menu to Script Menu<br/>
-		[FIXED] Weather Rotates Hourly<br/>				
-		<br/>
-		CHANGES FOR V1.0866<br/>
-		[ADDED] Dynamic Random Weather<br/>
-		[ADDED] Auto Vehicle Respawner<br/>
-		[ADDED] Generic Vehicle Service<br/>
-		[ADDED] Generic Vehicle Service ZONES (On Map)<br/>
-		[ADDED] A Few more Vehicles in Useful locations<br/>
-		[FIXED] How many Medkits and Toolkits Spawn<br/>
-		[FIXED] Vehicle Zone Repair and Zone size<br/>
-		[FIXED] Renamed Things in Briefing Menu<br/>
-		[EDITED] Teams Seperated While spawning On the Island<br/>
-		[ROTATED] Most vehicles to face the right direction<br/>
-		[UPDATED] SOURCE FILES TO GoT's 1.08d/ See Changelog<br/>
-		[ADDED] Heli Pad Spawns for Choppers (Repair Points Also)<br/>
-		[REVERTED] Weather Rotates Every Half Hour<br/>			
-		<br/>
-		CHANGES FOR V1.0867<br/>
-		[FIXED] A FEW VEHICLE SPAWNS<br/>
-		[FIXED] RANGE ON REPAIR ZONES<br/>			
-		[LOWERED] RANGE ON VEHICLE REPAIR<br/>			
-		[FIXED] REPAIR ZONES NOT HAVING A HELI PAD<br/>			
-		[MOVED] HELI PADS TO ENDS OF RUNWAY<br/>
-		[REMOVED] ADMIN STUFF FROM SERVER FILE<br/>				
-		<br/>
-		CHANGES FOR V1.0868<br/>
-		[FIXED] ALL REPAIR POINTS NOW CAN ABORT<br/>
-		[CLEANED] ALL REPAIR POINTS RE-ENTERED IN ORDER<br/>		
-		[MOVED] SOME REPAIR POINTS AT RUNWAY<br/>				
-		[REMOVED] BOAT REPAIR AREAS (HANDLING IS STUPID)<br/>		
-		<br/>
-		CHANGES FOR V1.0869<br/>
-		[ADDED] SDAR FOR ALL CLASSES ON SPAWN<br/>
-		<br/>
-"
-]
-];
 
-player createDiaryRecord["changelog",
-[
-"1.087(SPJESTER)",
-"
-<br/>
-		CHANGES FOR V1.087<br/>
-		[FIXED] BOATS BEING BEACHED ON SHORELINE/ROCK<br/>
-		[FIXED] SOME TEAMS SPAWNING AND BEING STUCK<br/>
-		[EDITED] FOOD AND WATER LEVELS TO 200 LIKE MONEY<br/>
-		[TWEAKED] START TIME TO 9AM FOR A NORMAL DAY<br/>
-		[TWEAKED] OVERCAST TO BE LOWER.<br/>
-		[ADDED] NV GOGGLES ON SPAWN INVENTORY FOR ALL<br/>
-		[ADDED] BINOCULARS ON SPAWN FOR ALL<br/>
-		<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.088(SPJESTER)",
-"
-<br/>
-		CHANGES FOR V1.088<br/>
-		[ADDED] GPS to BluFor and Opfor<br/>
-		[ADDED] TAW VIEW DISTANCE MOD<br/>
-		[FIXED] FOOD LEVELS<br/>		
-		[FIXED] SCRIPT MENU IN WAY ALL THE TIME<br/>
-		[FIXED] SCRIPT MENU ON TOP OF ALL<br/>
-		[ATTEMPT-FIX] BIS HACKER MESSAGE<br/>		
-		[CHANGED] WEAPON LAYOUTS<br/>
-		[CHANGED] RESPAWN TIMER TO 10SEC<br/>		
-		<br/>
-"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.0899(SPJESTER)",
-"
-<br/>
-		CHANGES FOR V1.089<br/>
-		[ADDED] BIS CLEAR/RECOMPILE FUNCTION<br/>
-		[ADDED] IMPROVED ANTI-HACK SYSTEM<br/>	
-		[MOVED] MOST SCRIPTS TO BEGINNING TO LOAD FASTER<br/>
-		[FIXED] WEATHER/FOG TAKING A FEW TO START<br/>
-		[TWEAKED] THE FOG TO BE A LITTLE LESS AGRESSIVE<br/>
-		[TWEAKED] SOME ANTI-HACK SETTINGS<br/>
-		[TWEAKED] DEFAULT VIEWDISTANCE<br/>
-		[CHANGED] SOME OBSOLETE CODE PREPING FOR UPDATE<br/>	
-		[CHANGED] LABELING, THIS IS NOW THE FULL RELEASE<br/>
-		[CHANGED] START TIME TO 12AM<br/>
-		<br/>
-		CHANGES FOR V1.0892<br/>
-		[ADDED] WEATHER AND TIME CHANGE TO ADMIN PANEL<br/>
-		[FIXED] LOCAL MISSIONS NOT APPEARING<br/>
-		[TWEAKED] ANTI-HACK CODE (TELLS ON THE HACKER)<br/>
-		[BEGIN CONVERTING] MODS FOR THE NEW BUILD<br/>	
-        <br/>				
-		CHANGES FOR V1.0894<br/>
-		[REMOVED] Food and Water System<br/>
-		[REMOVED] Food and Water items for FPS<br/>
-		<br/>
-		CHANGES FOR V1.0895<br/>
-		[TWEAKED] FEW THINGS IN CODE<br/>
-		[FIXED] HELI'S LIFT MORE/ CARS TOW MORE<br/>
-		<br/>
-		CHANGES FOR V1.0896<br/>
-		[ADDED] BACKPACKS AND DIVER GOGGLES TO GUNSTORE<br/>
-		[ADDED] HD PATCH SCRIPT (Fussion)<br/>
-		[TWEAKED] WEAPON LOADOUT ITEMS<br/>
-		[CONVERTED] OLDER SCRIPTS TO NEW CODE<br/>
-		<br/>		
-		CHANGES FOR V1.0897<br/>
-		[FIXED] BACKPACKS IN GUNSTORE<br/>
-		[TWEAKED] A FEW MORE SCRIPTS<br/>
-		[TWEAKED] ANTI-HACK AGAIN<br/>
-		[TWEAKED] RANDOM VEHICLE SPAWNER<br/>
-		[CLEANED] UP SOME CODE<br/>
-		[MODDED]MAX PLAYER SUPPORT 106 PLAYERS<br/>
-		[HOPEFULLY]	FIXED WEAPON ADDONS DISAPPEAR<br/>
-		[HALF-FIXED] ADMIN PANEL (MOSTLY WORKS)<br/>
-		[SOURCE] UPDATED TO SOME NEW FIXES<br/>
-		<br/>		
-		CHANGES FOR V1.0898<br/>
-		[ADDED] FASTER NIGHT TIME by Tonic<br/>
-		[TWEAKED] FASTER NIGHT TIME SETTINGS<br/>
-		[FIXED] SMALL HOTFIX FOR VEHICLE RESPAWN<br/>
-		<br/>
-		CHANGES FOR V1.0899<br/>
-		[ADDED] MORE TOWING SUPPORT<br/>
-		[ADDED] MORE BARRIERS TO MOVE/SPAWN LIST<br/>		
-		[ADDED] SMALL BARRACKS TO MOVE/SPAWN LIST<br/>
-		[ADDED] DEFENCE TOWER TO MOVE/SPAWN LIST<br/>
-		[NEWS] BASE BUILDING IMPLEMENTED<br/>
-		[EDITED] UNARMED TRUCKS LOAD-IN CAPACITY<br/>
-		[REMOVED] RANDOM WATER AND SACKS<br/>
-		"
-]
-];
-
-player createDiaryRecord["changelog",
-[
-"1.091(SPJESTER)",
-"
-<br/>
-		CHANGES FOR V1.091<br/>
-		[TWEAKED] NIGHT TIME TO SKIP BY 15MINS EVERY 1MIN<br/>
-		[TWEAKED] DAY TIME TO SKIP BY 5MINS EVERY 1MIN<br/>	
-		[TWEAKED] START TIME TO 5:45AM FOR FULL DAY<br/>
-		<br/>
 "
 ]
 ];
@@ -334,14 +297,14 @@ player createDiaryRecord["changelog",
 "
 <br/>
 		CURRENT BUGLIST:<br/>
-		SOME OF ADMIN PANEL IS STILL BROKEN<br/>
+		[-]CARS EXPLODING ON FIRST SPAWN<br/>
 		[*LET ME KNOW IF FOUND MORE* -SPJESTER]<br/>
 		<br/>
 "
 ]
 ];
 
-player createDiaryRecord["404games",
+player createDiaryRecord["ultimate_wasteland",
 [
 "Credits",
 "
@@ -350,16 +313,13 @@ player createDiaryRecord["404games",
 	Deadbeat<br/>
 	Costlyy<br/>
 	Pulse<br/>
-	Domuk<br/><br/>
-	
+	Domuk<br/><br/><br/>
 	Others:<br/>
-	*Sanjo (GitHub)<br/>
-	<br/>*Convoy MainMission<br/>
-	*Tonic-_- (BIS-forums)<br/>
-	*helped disabling r3f on mapbound items<br/><br/>
-	
+	Sanjo (GitHub)<br/>
+	Tonic-_- (BIS-forums)<br/><br/>
 	Server Mission Scripter:<br/>
 	SPJESTER<br/>
+	Bush Wookie<br/>
 	<br/>
 "
 ]
@@ -367,20 +327,16 @@ player createDiaryRecord["404games",
 
 player createDiaryRecord["serverinfo",
 [
-"Who what where?",
+"What is Ultimate Wasteland ?",
 "
 <br/>
-	What is the GoT2DayZ script and why are you hosting Arma3?<br/><br/>
-	GoT2DayZ was initially founded as a player-base for the dutch Tweakers.NET Community<br/>
-	However as time passed on we also started playing wasteland on arma2.<br/>
-	Now with arma3 also having wasteland, we run 3 publics and 1 private server.<br/>
-	<br/><br/>
-	* DayZ Chernarus (Private/Passworded) with safezone<br/>
-	* DayZ Celle (Whitelisted)<br/>
-	* ArmA2 Wasteland on Utes (Customized by us)<br/>
-	* ArmA3 Alpha Wasteland on Stratis (Costomized by us)<br/>
-	<br/>
-	I cant urge enough that all credits for this mission go to the original makers at 404Games!<br/>
+	Ultimate Wasteland is a heavily modified version of GoT Wasteland<br/><br/>
+	Originaly Based of 404 wasteland witch was based of Tonic's wasteland<br/>
+	The GoT Team took 404Games version of wasteland and improved on it<br/>
+	Then SPJESTER took GoT's version and made vast modifications and improvements<br/>
+	Then Bush Wookie came along and helped out with scripts and antihacks<br/>
+	Now SPJESTER and Bush Wookie are working togeather to bring you the best version of wasteland<br/>
+	All credit goes to TAW Tonic aka Tonic-_- for the original mission style and design<br/>
 	<br/>
 "
 ]
@@ -401,14 +357,15 @@ player createDiaryRecord["serverinfo",
 
 player createDiaryRecord["serverinfo",
 [
-"Credits",
+"Comunity Forum",
 "
 <br/>
-	Hosting and mod edits:<br/><br/>
-	-JoSchaap<br/>
-	-Anyone who files issues or pull requests on the GiT's<br/>
-	-SPJESTER / Server Editing, Vehicle Spawns and Crates<br/>
-
+	Whats up guys the devs of the server have<br/>
+	been working there asses off to keep the<br/>
+	server bug free and now they have set up a<br/>
+	comunity forum where you can go and share<br/>
+	your experiance on the server and report bugs<br/>
+	so go check it out at http://Obliviousgaming.com<br/>
 "
 ]
 ];

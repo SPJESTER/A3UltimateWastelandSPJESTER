@@ -57,9 +57,20 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 	                closeDialog 0;
 					execVM "client\systems\adminPanel\vehicleManagement.sqf";
 				};
-			    case 2: //Tags
+			    case 3: //Teleport
 			    {
-					execVM "client\systems\adminPanel\playerTags.sqf";
+	                closeDialog 0;    
+	                hint "Click on map to teleport";
+	                onMapSingleClick "vehicle player setPos _pos; onMapSingleClick '';true;";
+			    };
+	            case 4: //Money
+			    {      
+					player setVariable["cmoney", (player getVariable "cmoney")+1000,true];
+			    };
+	            case 5: //RSLO Menu
+			    {   
+	            	closeDialog 0;   
+	                createDialog "RSLO_gui";
 			    };
 			};
 		};
@@ -85,16 +96,88 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 			    {
 	                closeDialog 0;    
 	                hint "Click on map to teleport";
-	                onMapSingleClick "vehicle player setPos _pos; onMapSingleClick '';true;";
+					if ((vehicle player isKindOf "air") && (isEngineOn vehicle player)) then
+					{
+						wookie_air_tp=
+						{
+							_pos = [_this select 0, _this select 1, _this select 2];
+							_pos = [_this select 0, _this select 1, (getTerrainHeightASL _pos)+100];
+		
+							_aim = (vehicle player);
+							if (true) then
+							{
+								_aim setPosASL _pos;
+							};
+							onMapSingleClick "";
+							openMap [false, false];
+						};
+	
+						openMap [true, false];
+						onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call wookie_air_tp";
+					}
+					else
+					{
+						wookie_ground_tp=
+						{
+							_pos = [_this select 0, _this select 1, _this select 2];
+							_pos = [_this select 0, _this select 1, (getTerrainHeightASL _pos)+0.5];
+		
+							_aim = (vehicle player);
+							if (true) then
+							{
+								_aim setPosASL _pos;
+							};
+							onMapSingleClick "";
+							openMap [false, false];
+						};
+
+						openMap [true, false];
+						onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call wookie_ground_tp";
+					};
 			    };
 	            case 4: //Money
 			    {      
-					player setVariable["cmoney", (player getVariable "cmoney")+2000,true];
+					player setVariable["cmoney", (player getVariable "cmoney")+1000,true];
 			    };
 	            case 5: //Debug Menu
 			    {   
 	            	closeDialog 0;   
 	                execVM "client\systems\adminPanel\loadDebugMenu.sqf";
+			    };
+	            case 6: //RSLO Menu
+			    {   
+	            	closeDialog 0;   
+	                createDialog "RSLO_gui";
+			    };
+				case 7: //God Mode
+			    {   
+	            	if (isNil "God_Mode_wookie") then
+					{
+						God_Mode_wookie = 0;
+					};
+
+					if (God_Mode_wookie == 0) then
+					{
+						God_Mode_wookie = 1;
+						cutText [format["God Mode Enabled"], "PLAIN DOWN"];
+						fnc_usec_damageHandler = {};
+						fnc_usec_unconscious  = {};
+						player removeAllEventHandlers "handleDamage";
+						player addEventHandler ["handleDamage", {false}];
+						player allowDamage false;
+						sleep 2;
+						cutText [format[""], "PLAIN DOWN"];
+					}
+					else
+					{
+						God_Mode_wookie = 0;
+						cutText [format["God Mode Disabled"], "PLAIN DOWN"];//save after
+						player addEventHandler ["handleDamage", {true}];
+						player removeAllEventHandlers "handleDamage";
+						player allowDamage true;
+						sleep 2;
+						cutText [format[""], "PLAIN DOWN"];
+					};
 			    };
 			};
 	    };
@@ -117,27 +200,14 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 	                closeDialog 0;
 					true spawn client_respawnDialog;
 			    };
-			    case 3: //Access Proving Grounds
-			    {
-	                closeDialog 0;      
-					createDialog "balca_debug_main";
-			    };
-	            case 4: //Restart Function
+	            case 3: //Server Fps
 			    {      
 					hint format["Server FPS: %1",serverFPS];
 			    };
-	            case 5: //Test Function
+	            case 4: //Back
 			    {
-                    _group = createGroup civilian;
-					_leader = _group createunit ["C_man_polo_1_F", getPos player, [], 0.5, "Form"];
-                    
-					_leader addMagazine "RPG32_F";
-					_leader addMagazine "RPG32_F";
-					_leader addWeapon "launch_RPG32_F";
-					_leader addMagazine "30Rnd_65x39_case_mag";
-					_leader addMagazine "30Rnd_65x39_case_mag";
-					_leader addMagazine "30Rnd_65x39_case_mag";
-					_leader addWeapon "arifle_TRG20_F";
+					closeDialog 0;
+					execVM "client\systems\adminPanel\loadServerAdministratorMenu.sqf";
 			    };
 			};		
 	    };

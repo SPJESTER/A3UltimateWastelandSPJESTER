@@ -13,7 +13,7 @@ _randomLoc = cityList select (random (count cityList - 1));
 _pos = getMarkerPos (_randomLoc select 0);
 _pos = [_pos,1,(_randomLoc select 1),1,0,0,0] call BIS_fnc_findSafePos;
 _pos = [_pos select 0, _pos select 1, (_pos select 2) + 10];
-player setPos _pos;
+player setPosATL _pos;
 
 respawnDialogActive = false;
 closeDialog 0;

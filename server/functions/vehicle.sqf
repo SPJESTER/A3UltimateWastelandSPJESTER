@@ -1,7 +1,7 @@
 /*  
 =========================================================
   Simple Vehicle Respawn Script v1.8
-  by Tophe of ?stg?ta Ops [OOPS], also thanks too SPJESTER (A404forums)
+  by Tophe of �stg�ta Ops [OOPS], also thanks too SPJESTER (A404forums)
   
   Put this in the vehicles init line:
   veh = [this] execVM "vehicle.sqf"
@@ -91,20 +91,39 @@ _nodelay = false;
 // Start monitoring the vehicle
 while {_run} do 
 {	
-	sleep (2 + random 10);
+	sleep 10;
       if ((getDammage _unit > 0.8) and ({alive _x} count crew _unit == 0)) then {_dead = true};
 
 	// Check if the vehicle is deserted.
 	if (_deserted > 0) then
 	{
-		if ((getPosASL _unit distance _position > 10) and ({alive _x} count crew _unit == 0) and (getDammage _unit < 0.8)) then 
+		if (getPosASL _unit distance _position > 10 && {alive _unit} count crew _unit == 0) then 
 		{
+			diag_log format ["Crew: %1", {alive _unit} count crew _unit];
+
 			_timeout = time + _deserted;
 			sleep 0.1;
-		 	waitUntil {_timeout < time or !alive _unit or {alive _x} count crew _unit > 0};
-			if ({alive _x} count crew _unit > 0) then {_dead = false}; 
-			if ({alive _x} count crew _unit == 0) then {_dead = true; _nodelay =true}; 
-			if !(alive _unit) then {_dead = true; _nodelay = false}; 
+
+			while { _timeout > time && alive _unit && {alive _unit} count crew _unit == 0 } do
+			{
+				sleep 5;
+
+				// R3F HELL YEA
+				if (!isNull (_unit getVariable ["R3F_LOG_est_transporte_par", objNull]) || {!isNull (_unit getVariable ["R3F_LOG_est_deplace_par", objNull])}) then
+				{
+					_timeout = time + _deserted;
+				};
+			};
+
+			if ({alive _unit} count crew _unit > 0) then
+			{
+				_dead = false;
+			}
+			else
+			{
+				_dead = true;
+				if (alive _unit) then { _nodelay = true } else { _nodelay = false };
+			};
 		};
 	};
 
@@ -112,7 +131,8 @@ while {_run} do
       if (_dead) then 
 	{	
 		if (_nodelay) then {sleep 0.1; _nodelay = false;} else {sleep _delay;};
-		if (_dynamic) then {_position = getPosASL _unit; _dir = getDir _unit;};
+		if (typename _dynamic == "ARRAY") then { _position = _dynamic; }
+		else { _position = getPosASL _unit; _dir = getDir _unit; };
 		if (_explode) then {_effect = "M_AT" createVehicle getPosASL _unit; _effect setPosASL getPosASL _unit;};
 		sleep 0.1;
 

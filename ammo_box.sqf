@@ -24,7 +24,7 @@ _crate addWeaponCargoGlobal ["arifle_MXC_F", 50];
 _crate addWeaponCargoGlobal ["arifle_TRG20_F", 50];
 _crate addWeaponCargoGlobal ["arifle_TRG21_F", 50];
 _crate addWeaponCargoGlobal ["arifle_TRG21_GL_F", 50];
-//_crate addWeaponCargoGlobal ["arifle_MSM_F", 50];
+//_crate addWeaponCargoGlobal ["arifle_MXM_F", 50];
 _crate addWeaponCargoGlobal ["srifle_EBR_F", 50];
 _crate addWeaponCargoGlobal ["LMG_Mk200_F", 50];
 

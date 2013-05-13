@@ -18,9 +18,8 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 	_panelOptions = ["Access Gun Store",
 					"Access General Store",
 					"Access Respawn Dialog",
-					"Access Proving Grounds",
 	                "Show Server FPS",
-	                "Test Function"
+	                "Back"
 	];
 	
 	{

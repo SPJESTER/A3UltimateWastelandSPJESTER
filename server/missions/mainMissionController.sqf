@@ -48,10 +48,7 @@ while {true} do
     
 	_missionRunning = [] spawn _mission;
     diag_log format["WASTELAND SERVER - Execute New Main Mission: %1",_missionType];
-    _hint = parseText format ["<t align='center' color='%2' shadow='2' size='1.75'>Main Objective</t><br/><t align='center' color='%2'>------------------------------</t><br/><t color='%3' size='1.0'>Starting in %1 Minutes</t>", mainMissionDelayTime / 60, mainMissionColor, subTextColor];
-	messageSystem = _hint;
-
-	publicVariable "messageSystem";
+    [[mainMissionDelayTime / 60],"wookie_fnc_mainmission",true,false] spawn BIS_fnc_MP;
     _lastMission = _missionType;
 	waitUntil{sleep 0.1; scriptDone _missionRunning};
     sleep 5; 
